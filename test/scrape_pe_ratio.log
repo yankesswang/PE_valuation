@@ -1,0 +1,1572 @@
+2025-01-28 11:03:31,571 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-28 11:03:31,647 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:31,914 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:32,122 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:32,325 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:33,999 - INFO - Navigating to https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,443 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,516 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,577 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,577 - INFO - Found PE text: '120.48' in URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,577 - INFO - Extracted 5Y PE Average: 120.48 for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-28 11:03:35,578 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:35,720 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:35,924 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:36,132 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:36,730 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,272 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,349 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,435 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,435 - INFO - Found PE text: '57.19' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,435 - INFO - Extracted 5Y PE Average: 57.19 for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-28 11:03:38,436 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:38,586 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:38,811 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:39,021 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:39,668 - INFO - Navigating to https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,568 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,649 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,713 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,713 - INFO - Found PE text: '45.86' in URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,713 - INFO - Extracted 5Y PE Average: 45.86 for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-28 11:03:40,713 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:40,865 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:41,070 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:41,276 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:42,064 - INFO - Navigating to https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-28 11:03:43,539 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-28 11:03:43,617 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-28 11:03:43,618 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-28 11:03:43,618 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio.
+2025-01-28 11:03:43,619 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:43,769 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:43,977 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:44,188 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:44,759 - INFO - Navigating to https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,440 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,516 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,573 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,573 - INFO - Found PE text: '25.38' in URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,573 - INFO - Extracted 5Y PE Average: 25.38 for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-28 11:03:45,573 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:45,723 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:45,931 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:46,142 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:46,938 - INFO - Navigating to https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,734 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,813 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,904 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,904 - INFO - Found PE text: '33.57' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,904 - INFO - Extracted 5Y PE Average: 33.57 for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-28 11:03:47,904 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:48,054 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:48,259 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:48,469 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:49,230 - INFO - Navigating to https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,818 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,899 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,964 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,964 - INFO - Found PE text: '45.60' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,964 - INFO - Extracted 5Y PE Average: 45.6 for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-28 11:03:49,965 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:50,114 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:50,321 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:50,525 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:51,270 - INFO - Navigating to https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,017 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,096 - INFO - WebDriver closed for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,155 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,155 - INFO - Found PE text: '26.08' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,155 - INFO - Extracted 5Y PE Average: 26.08 for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-28 11:03:52,156 - INFO - Processing sector: 航空郵輪 with 9 stocks.
+2025-01-28 11:03:52,156 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:52,307 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:52,510 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:52,716 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:53,496 - INFO - Navigating to https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,217 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,295 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,388 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,389 - INFO - Found PE text: '137.12' in URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,389 - INFO - Extracted 5Y PE Average: 137.12 for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-28 11:03:55,389 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:55,538 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:55,745 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:55,953 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:56,538 - INFO - Navigating to https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-28 11:03:57,510 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-28 11:03:57,590 - INFO - WebDriver closed for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-28 11:03:57,591 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-28 11:03:57,591 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio.
+2025-01-28 11:03:57,592 - INFO - ====== WebDriver manager ======
+2025-01-28 11:03:57,740 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:57,950 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:03:58,153 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:03:58,740 - INFO - Navigating to https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-28 11:03:59,869 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-28 11:03:59,943 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-28 11:03:59,944 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-28 11:03:59,944 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio.
+2025-01-28 11:03:59,944 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:00,085 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:00,287 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:00,491 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:01,258 - INFO - Navigating to https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,113 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,190 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,253 - INFO - Found 16 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,253 - INFO - Found PE text: '-40.23' in URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,253 - INFO - Extracted 5Y PE Average: 40.23 for URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-28 11:04:02,254 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:02,404 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:02,612 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:02,821 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:03,594 - INFO - Navigating to https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-28 11:04:05,140 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-28 11:04:05,220 - INFO - WebDriver closed for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-28 11:04:05,221 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-28 11:04:05,221 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio.
+2025-01-28 11:04:05,222 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:05,377 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:05,589 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:05,791 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:06,387 - INFO - Navigating to https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,400 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,479 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,545 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,545 - INFO - Found PE text: '1.49' in URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,545 - INFO - Extracted 5Y PE Average: 1.49 for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-28 11:04:07,546 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:07,688 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:07,897 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:08,107 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:08,880 - INFO - Navigating to https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,017 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,099 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,190 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,190 - INFO - Found PE text: '23.94' in URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,190 - INFO - Extracted 5Y PE Average: 23.94 for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-28 11:04:10,190 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:10,342 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:10,542 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:10,753 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:11,355 - INFO - Navigating to https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,097 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,175 - INFO - WebDriver closed for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,240 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,240 - INFO - Found PE text: '-1.19' in URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,240 - INFO - Extracted 5Y PE Average: 1.19 for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-28 11:04:12,241 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:12,394 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:12,601 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:12,807 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:13,377 - INFO - Navigating to https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,265 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,345 - INFO - WebDriver closed for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,410 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,410 - INFO - Found PE text: '3.17' in URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,410 - INFO - Extracted 5Y PE Average: 3.17 for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-28 11:04:14,411 - INFO - Processing sector: 銀行 with 8 stocks.
+2025-01-28 11:04:14,411 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:14,558 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:14,768 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:14,971 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:15,565 - INFO - Navigating to https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,395 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,474 - INFO - WebDriver closed for URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,564 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,564 - INFO - Found PE text: '11.70' in URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,564 - INFO - Extracted 5Y PE Average: 11.7 for URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-28 11:04:16,565 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:16,705 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:16,909 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:17,114 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:17,883 - INFO - Navigating to https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,576 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,657 - INFO - WebDriver closed for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,723 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,723 - INFO - Found PE text: '11.25' in URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,723 - INFO - Extracted 5Y PE Average: 11.25 for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-28 11:04:18,724 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:18,876 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:19,078 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:19,284 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:19,868 - INFO - Navigating to https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-28 11:04:20,922 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-28 11:04:20,998 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-28 11:04:21,050 - INFO - Found 10 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-28 11:04:21,050 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio.
+2025-01-28 11:04:21,051 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:21,198 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:21,412 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:21,619 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:22,421 - INFO - Navigating to https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,127 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,206 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,298 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,298 - INFO - Found PE text: '12.38' in URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,298 - INFO - Extracted 5Y PE Average: 12.38 for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-28 11:04:23,298 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:23,450 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:23,658 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:23,863 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:24,644 - INFO - Navigating to https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,344 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,417 - INFO - WebDriver closed for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,482 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,483 - INFO - Found PE text: '14.76' in URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,483 - INFO - Extracted 5Y PE Average: 14.76 for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-28 11:04:25,483 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:25,640 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:25,842 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:26,052 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:26,809 - INFO - Navigating to https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-28 11:04:27,400 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-28 11:04:27,480 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-28 11:04:27,531 - INFO - Found 10 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-28 11:04:27,531 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NU/valuation/pe-ratio.
+2025-01-28 11:04:27,532 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:27,686 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:27,889 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:28,119 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:28,736 - INFO - Navigating to https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,296 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,374 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,441 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,441 - INFO - Found PE text: '21.17' in URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,441 - INFO - Extracted 5Y PE Average: 21.17 for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-28 11:04:29,441 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:29,592 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:29,791 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:29,995 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:30,755 - INFO - Navigating to https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,612 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,687 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,785 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,785 - INFO - Found PE text: '13.10' in URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,785 - INFO - Extracted 5Y PE Average: 13.1 for URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-28 11:04:31,786 - INFO - Processing sector: 傳統 with 6 stocks.
+2025-01-28 11:04:31,786 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:31,919 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:32,127 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:32,335 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:32,911 - INFO - Navigating to https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,774 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,855 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,919 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,919 - INFO - Found PE text: '15.99' in URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,920 - INFO - Extracted 5Y PE Average: 15.99 for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-28 11:04:33,920 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:34,065 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:34,273 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:34,481 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:35,266 - INFO - Navigating to https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,098 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,178 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,243 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,243 - INFO - Found PE text: '14.06' in URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,243 - INFO - Extracted 5Y PE Average: 14.06 for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-28 11:04:36,244 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:36,395 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:36,597 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:36,801 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:37,574 - INFO - Navigating to https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,328 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,405 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,493 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,493 - INFO - Found PE text: '41.58' in URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,493 - INFO - Extracted 5Y PE Average: 41.58 for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-28 11:04:38,493 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:38,649 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:38,854 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:39,061 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:39,697 - INFO - Navigating to https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,434 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,511 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,576 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,576 - INFO - Found PE text: '72.19' in URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,576 - INFO - Extracted 5Y PE Average: 72.19 for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-28 11:04:40,576 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:40,726 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:40,927 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:41,140 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:41,913 - INFO - Navigating to https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,677 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,753 - INFO - WebDriver closed for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,821 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,821 - INFO - Found PE text: '27.53' in URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,821 - INFO - Extracted 5Y PE Average: 27.53 for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-28 11:04:42,822 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:42,976 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:43,177 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:43,390 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:44,191 - INFO - Navigating to https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,118 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,197 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,291 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,291 - INFO - Found PE text: '51.49' in URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,291 - INFO - Extracted 5Y PE Average: 51.49 for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-28 11:04:46,291 - INFO - Processing sector: 支付 with 4 stocks.
+2025-01-28 11:04:46,292 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:46,440 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:46,643 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:46,847 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:47,638 - INFO - Navigating to https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,507 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,581 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,645 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,646 - INFO - Found PE text: '18.75' in URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,646 - INFO - Extracted 5Y PE Average: 18.75 for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-28 11:04:48,646 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:48,797 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:49,017 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:49,226 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:49,998 - INFO - Navigating to https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:50,902 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:50,980 - INFO - WebDriver closed for URL https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:51,036 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:51,036 - INFO - Found PE text: '31.63' in URL https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:51,036 - INFO - Extracted 5Y PE Average: 31.63 for URL https://financecharts.com/stocks/PYPL/valuation/pe-ratio
+2025-01-28 11:04:51,036 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:51,184 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:51,385 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:51,594 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:52,199 - INFO - Navigating to https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,069 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,149 - INFO - WebDriver closed for URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,241 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,241 - INFO - Found PE text: '34.91' in URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,241 - INFO - Extracted 5Y PE Average: 34.91 for URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-28 11:04:53,242 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:53,391 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:53,604 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:53,820 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:54,404 - INFO - Navigating to https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,270 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,347 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,411 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,411 - INFO - Found PE text: '38.73' in URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,411 - INFO - Extracted 5Y PE Average: 38.73 for URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-28 11:04:55,412 - INFO - Processing sector: 零售 with 13 stocks.
+2025-01-28 11:04:55,412 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:55,570 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:55,778 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:55,982 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:56,579 - INFO - Navigating to https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,642 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,716 - INFO - WebDriver closed for URL https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,782 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,783 - INFO - Found PE text: '27.93' in URL https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,783 - INFO - Extracted 5Y PE Average: 27.93 for URL https://financecharts.com/stocks/LVMHF/valuation/pe-ratio
+2025-01-28 11:04:57,783 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:57,936 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:58,147 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:04:58,376 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:04:58,972 - INFO - Navigating to https://financecharts.com/stocks/GPS/valuation/pe-ratio
+2025-01-28 11:04:59,564 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GPS/valuation/pe-ratio
+2025-01-28 11:04:59,639 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GPS/valuation/pe-ratio
+2025-01-28 11:04:59,652 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GPS/valuation/pe-ratio
+2025-01-28 11:04:59,652 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/GPS/valuation/pe-ratio.
+2025-01-28 11:04:59,653 - INFO - ====== WebDriver manager ======
+2025-01-28 11:04:59,804 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:00,007 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:00,215 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:00,804 - INFO - Navigating to https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,043 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,120 - INFO - WebDriver closed for URL https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,212 - INFO - Found 16 div(s) with class 'col faq' in URL https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,212 - INFO - Found PE text: '4.64' in URL https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,212 - INFO - Extracted 5Y PE Average: 4.64 for URL https://financecharts.com/stocks/FL/valuation/pe-ratio
+2025-01-28 11:05:02,213 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:02,362 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:02,566 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:02,767 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:03,394 - INFO - Navigating to https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,097 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,170 - INFO - WebDriver closed for URL https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,235 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,235 - INFO - Found PE text: '29.91' in URL https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,235 - INFO - Extracted 5Y PE Average: 29.91 for URL https://financecharts.com/stocks/PG/valuation/pe-ratio
+2025-01-28 11:05:04,236 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:04,369 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:04,578 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:04,782 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:05,372 - INFO - Navigating to https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,053 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,131 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,192 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,192 - INFO - Found PE text: '18.59' in URL https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,192 - INFO - Extracted 5Y PE Average: 18.59 for URL https://financecharts.com/stocks/DG/valuation/pe-ratio
+2025-01-28 11:05:06,193 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:06,339 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:06,547 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:06,751 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:07,352 - INFO - Navigating to https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,630 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,710 - INFO - WebDriver closed for URL https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,805 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,805 - INFO - Found PE text: '16.42' in URL https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,805 - INFO - Extracted 5Y PE Average: 16.42 for URL https://financecharts.com/stocks/JWN/valuation/pe-ratio
+2025-01-28 11:05:08,806 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:08,941 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:09,161 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:09,372 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:09,979 - INFO - Navigating to https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:10,857 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:10,937 - INFO - WebDriver closed for URL https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:11,000 - INFO - Found 24 div(s) with class 'col faq' in URL https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:11,000 - INFO - Found PE text: '40.64' in URL https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:11,000 - INFO - Extracted 5Y PE Average: 40.64 for URL https://financecharts.com/stocks/LULU/valuation/pe-ratio
+2025-01-28 11:05:11,000 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:11,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:11,357 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:11,561 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:12,331 - INFO - Navigating to https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,038 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,115 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,181 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,181 - INFO - Found PE text: '32.07' in URL https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,181 - INFO - Extracted 5Y PE Average: 32.07 for URL https://financecharts.com/stocks/NKE/valuation/pe-ratio
+2025-01-28 11:05:13,181 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:13,365 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:13,567 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:13,770 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:14,524 - INFO - Navigating to https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,687 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,763 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,859 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,859 - INFO - Found PE text: '10.96' in URL https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,859 - INFO - Extracted 5Y PE Average: 10.96 for URL https://financecharts.com/stocks/TPR/valuation/pe-ratio
+2025-01-28 11:05:15,860 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:16,002 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:16,204 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:16,408 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:17,018 - INFO - Navigating to https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:17,864 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:17,942 - INFO - WebDriver closed for URL https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:18,006 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:18,007 - INFO - Found PE text: '45.10' in URL https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:18,007 - INFO - Extracted 5Y PE Average: 45.1 for URL https://financecharts.com/stocks/COST/valuation/pe-ratio
+2025-01-28 11:05:18,007 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:18,156 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:18,360 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:18,571 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:19,156 - INFO - Navigating to https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,243 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,329 - INFO - WebDriver closed for URL https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,415 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,415 - INFO - Found PE text: '17.50' in URL https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,415 - INFO - Extracted 5Y PE Average: 17.5 for URL https://financecharts.com/stocks/KR/valuation/pe-ratio
+2025-01-28 11:05:20,415 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:20,541 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:20,746 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:20,951 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:21,605 - INFO - Navigating to https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:22,914 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:22,996 - INFO - WebDriver closed for URL https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:23,092 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:23,092 - INFO - Found PE text: '13.42' in URL https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:23,092 - INFO - Extracted 5Y PE Average: 13.42 for URL https://financecharts.com/stocks/PVH/valuation/pe-ratio
+2025-01-28 11:05:23,093 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:23,240 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:23,444 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:23,653 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:24,283 - INFO - Navigating to https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,151 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,221 - INFO - WebDriver closed for URL https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,288 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,289 - INFO - Found PE text: '80.25' in URL https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,289 - INFO - Extracted 5Y PE Average: 80.25 for URL https://financecharts.com/stocks/EL/valuation/pe-ratio
+2025-01-28 11:05:25,289 - INFO - Processing sector: 食品 with 15 stocks.
+2025-01-28 11:05:25,289 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:25,436 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:25,643 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:25,851 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:26,466 - INFO - Navigating to https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,337 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,415 - INFO - WebDriver closed for URL https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,482 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,483 - INFO - Found PE text: '26.30' in URL https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,483 - INFO - Extracted 5Y PE Average: 26.3 for URL https://financecharts.com/stocks/KO/valuation/pe-ratio
+2025-01-28 11:05:27,483 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:27,631 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:27,832 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:28,040 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:28,840 - INFO - Navigating to https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:29,903 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:29,981 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:30,077 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:30,077 - INFO - Found PE text: '29.23' in URL https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:30,077 - INFO - Extracted 5Y PE Average: 29.23 for URL https://financecharts.com/stocks/DPZ/valuation/pe-ratio
+2025-01-28 11:05:30,077 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:30,217 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:30,416 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:30,628 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:31,394 - INFO - Navigating to https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,148 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,229 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,297 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,297 - INFO - Found PE text: '46.22' in URL https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,297 - INFO - Extracted 5Y PE Average: 46.22 for URL https://financecharts.com/stocks/CAKE/valuation/pe-ratio
+2025-01-28 11:05:33,297 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:33,583 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:33,786 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:33,993 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:34,652 - INFO - Navigating to https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:35,981 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:36,061 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:36,118 - INFO - Found 12 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:36,118 - INFO - Found PE text: '-7.08' in URL https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:36,119 - INFO - Extracted 5Y PE Average: 7.08 for URL https://financecharts.com/stocks/BLMN/valuation/pe-ratio
+2025-01-28 11:05:36,119 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:36,269 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:36,474 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:36,692 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:37,298 - INFO - Navigating to https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,057 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,143 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,208 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,208 - INFO - Found PE text: '34.72' in URL https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,208 - INFO - Extracted 5Y PE Average: 34.72 for URL https://financecharts.com/stocks/SBUX/valuation/pe-ratio
+2025-01-28 11:05:38,209 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:38,359 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:38,561 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:38,767 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:39,540 - INFO - Navigating to https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:40,916 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:40,993 - INFO - WebDriver closed for URL https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:41,093 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:41,093 - INFO - Found PE text: '25.39' in URL https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:41,093 - INFO - Extracted 5Y PE Average: 25.39 for URL https://financecharts.com/stocks/YUM/valuation/pe-ratio
+2025-01-28 11:05:41,093 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:41,244 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:41,448 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:41,655 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:42,423 - INFO - Navigating to https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,242 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,317 - INFO - WebDriver closed for URL https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,384 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,384 - INFO - Found PE text: '26.72' in URL https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,384 - INFO - Extracted 5Y PE Average: 26.72 for URL https://financecharts.com/stocks/PEP/valuation/pe-ratio
+2025-01-28 11:05:43,384 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:43,521 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:43,723 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:43,934 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:44,492 - INFO - Navigating to https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,657 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,734 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,798 - INFO - Found 16 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,799 - INFO - Found PE text: '-217.79' in URL https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,799 - INFO - Extracted 5Y PE Average: 217.79 for URL https://financecharts.com/stocks/TSN/valuation/pe-ratio
+2025-01-28 11:05:45,799 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:45,951 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:46,159 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:46,370 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:47,167 - INFO - Navigating to https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,664 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,742 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,837 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,838 - INFO - Found PE text: '17.98' in URL https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,838 - INFO - Extracted 5Y PE Average: 17.98 for URL https://financecharts.com/stocks/DENN/valuation/pe-ratio
+2025-01-28 11:05:48,838 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:48,990 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:49,192 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:49,408 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:50,194 - INFO - Navigating to https://financecharts.com/stocks/PLAY/valuation/pe-ratio
+2025-01-28 11:05:50,622 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/PLAY/valuation/pe-ratio
+2025-01-28 11:05:50,700 - INFO - WebDriver closed for URL https://financecharts.com/stocks/PLAY/valuation/pe-ratio
+2025-01-28 11:05:50,702 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/PLAY/valuation/pe-ratio
+2025-01-28 11:05:50,702 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/PLAY/valuation/pe-ratio.
+2025-01-28 11:05:50,702 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:50,852 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:51,059 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:51,266 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:51,866 - INFO - Navigating to https://financecharts.com/stocks/CMG/valuation/pe-ratio
+2025-01-28 11:05:52,041 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CMG/valuation/pe-ratio
+2025-01-28 11:05:52,115 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CMG/valuation/pe-ratio
+2025-01-28 11:05:52,117 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CMG/valuation/pe-ratio
+2025-01-28 11:05:52,117 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CMG/valuation/pe-ratio.
+2025-01-28 11:05:52,117 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:52,266 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:52,474 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:52,681 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:53,268 - INFO - Navigating to https://financecharts.com/stocks/FIZZ/valuation/pe-ratio
+2025-01-28 11:05:53,630 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/FIZZ/valuation/pe-ratio
+2025-01-28 11:05:53,708 - INFO - WebDriver closed for URL https://financecharts.com/stocks/FIZZ/valuation/pe-ratio
+2025-01-28 11:05:53,709 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/FIZZ/valuation/pe-ratio
+2025-01-28 11:05:53,709 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/FIZZ/valuation/pe-ratio.
+2025-01-28 11:05:53,710 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:53,859 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:54,063 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:54,271 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:55,063 - INFO - Navigating to https://financecharts.com/stocks/JACK/valuation/pe-ratio
+2025-01-28 11:05:55,404 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/JACK/valuation/pe-ratio
+2025-01-28 11:05:55,479 - INFO - WebDriver closed for URL https://financecharts.com/stocks/JACK/valuation/pe-ratio
+2025-01-28 11:05:55,481 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/JACK/valuation/pe-ratio
+2025-01-28 11:05:55,481 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/JACK/valuation/pe-ratio.
+2025-01-28 11:05:55,481 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:55,629 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:55,838 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:56,042 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:56,814 - INFO - Navigating to https://financecharts.com/stocks/DIN/valuation/pe-ratio
+2025-01-28 11:05:57,300 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DIN/valuation/pe-ratio
+2025-01-28 11:05:57,393 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DIN/valuation/pe-ratio
+2025-01-28 11:05:57,394 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DIN/valuation/pe-ratio
+2025-01-28 11:05:57,394 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/DIN/valuation/pe-ratio.
+2025-01-28 11:05:57,395 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:57,546 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:57,754 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:57,963 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:05:58,744 - INFO - Navigating to https://financecharts.com/stocks/MCD/valuation/pe-ratio
+2025-01-28 11:05:59,134 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MCD/valuation/pe-ratio
+2025-01-28 11:05:59,208 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MCD/valuation/pe-ratio
+2025-01-28 11:05:59,210 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MCD/valuation/pe-ratio
+2025-01-28 11:05:59,210 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MCD/valuation/pe-ratio.
+2025-01-28 11:05:59,210 - INFO - Processing sector: 半導體 with 16 stocks.
+2025-01-28 11:05:59,211 - INFO - ====== WebDriver manager ======
+2025-01-28 11:05:59,359 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:59,573 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:05:59,786 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:00,559 - INFO - Navigating to https://financecharts.com/stocks/AVGO/valuation/pe-ratio
+2025-01-28 11:06:00,890 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AVGO/valuation/pe-ratio
+2025-01-28 11:06:00,964 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AVGO/valuation/pe-ratio
+2025-01-28 11:06:00,965 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AVGO/valuation/pe-ratio
+2025-01-28 11:06:00,965 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AVGO/valuation/pe-ratio.
+2025-01-28 11:06:00,966 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:01,107 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:01,309 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:01,511 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:02,286 - INFO - Navigating to https://financecharts.com/stocks/AMAT/valuation/pe-ratio
+2025-01-28 11:06:02,615 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMAT/valuation/pe-ratio
+2025-01-28 11:06:02,687 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMAT/valuation/pe-ratio
+2025-01-28 11:06:02,688 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMAT/valuation/pe-ratio
+2025-01-28 11:06:02,688 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMAT/valuation/pe-ratio.
+2025-01-28 11:06:02,689 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:02,836 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:03,053 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:03,257 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:03,866 - INFO - Navigating to https://financecharts.com/stocks/ARM/valuation/pe-ratio
+2025-01-28 11:06:04,216 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ARM/valuation/pe-ratio
+2025-01-28 11:06:04,287 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ARM/valuation/pe-ratio
+2025-01-28 11:06:04,289 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ARM/valuation/pe-ratio
+2025-01-28 11:06:04,289 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ARM/valuation/pe-ratio.
+2025-01-28 11:06:04,289 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:04,419 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:04,626 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:04,832 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:05,425 - INFO - Navigating to https://financecharts.com/stocks/AMD/valuation/pe-ratio
+2025-01-28 11:06:05,765 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMD/valuation/pe-ratio
+2025-01-28 11:06:05,839 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMD/valuation/pe-ratio
+2025-01-28 11:06:05,841 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMD/valuation/pe-ratio
+2025-01-28 11:06:05,841 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMD/valuation/pe-ratio.
+2025-01-28 11:06:05,841 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:05,995 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:06,206 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:06,414 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:07,009 - INFO - Navigating to https://financecharts.com/stocks/QCOM/valuation/pe-ratio
+2025-01-28 11:06:09,814 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/QCOM/valuation/pe-ratio
+2025-01-28 11:06:09,898 - INFO - WebDriver closed for URL https://financecharts.com/stocks/QCOM/valuation/pe-ratio
+2025-01-28 11:06:09,900 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/QCOM/valuation/pe-ratio
+2025-01-28 11:06:09,900 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/QCOM/valuation/pe-ratio.
+2025-01-28 11:06:09,900 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:10,055 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:10,265 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:10,468 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:11,067 - INFO - Navigating to https://financecharts.com/stocks/HPE/valuation/pe-ratio
+2025-01-28 11:06:11,393 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/HPE/valuation/pe-ratio
+2025-01-28 11:06:11,465 - INFO - WebDriver closed for URL https://financecharts.com/stocks/HPE/valuation/pe-ratio
+2025-01-28 11:06:11,466 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/HPE/valuation/pe-ratio
+2025-01-28 11:06:11,466 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/HPE/valuation/pe-ratio.
+2025-01-28 11:06:11,466 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:11,610 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:11,816 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:12,026 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:12,625 - INFO - Navigating to https://financecharts.com/stocks/ASML/valuation/pe-ratio
+2025-01-28 11:06:12,811 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ASML/valuation/pe-ratio
+2025-01-28 11:06:12,885 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ASML/valuation/pe-ratio
+2025-01-28 11:06:12,887 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ASML/valuation/pe-ratio
+2025-01-28 11:06:12,887 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ASML/valuation/pe-ratio.
+2025-01-28 11:06:12,887 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:13,036 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:13,244 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:13,446 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:14,220 - INFO - Navigating to https://financecharts.com/stocks/NVDA/valuation/pe-ratio
+2025-01-28 11:06:14,584 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NVDA/valuation/pe-ratio
+2025-01-28 11:06:14,652 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NVDA/valuation/pe-ratio
+2025-01-28 11:06:14,653 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NVDA/valuation/pe-ratio
+2025-01-28 11:06:14,653 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NVDA/valuation/pe-ratio.
+2025-01-28 11:06:14,654 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:14,782 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:14,986 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:15,195 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:15,784 - INFO - Navigating to https://financecharts.com/stocks/MU/valuation/pe-ratio
+2025-01-28 11:06:16,119 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MU/valuation/pe-ratio
+2025-01-28 11:06:16,194 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MU/valuation/pe-ratio
+2025-01-28 11:06:16,196 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MU/valuation/pe-ratio
+2025-01-28 11:06:16,196 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MU/valuation/pe-ratio.
+2025-01-28 11:06:16,196 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:16,343 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:16,549 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:16,754 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:17,352 - INFO - Navigating to https://financecharts.com/stocks/MRVL/valuation/pe-ratio
+2025-01-28 11:06:17,690 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MRVL/valuation/pe-ratio
+2025-01-28 11:06:17,761 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MRVL/valuation/pe-ratio
+2025-01-28 11:06:17,763 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MRVL/valuation/pe-ratio
+2025-01-28 11:06:17,763 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MRVL/valuation/pe-ratio.
+2025-01-28 11:06:17,763 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:17,914 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:18,119 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:18,325 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:18,936 - INFO - Navigating to https://financecharts.com/stocks/INTC/valuation/pe-ratio
+2025-01-28 11:06:19,366 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/INTC/valuation/pe-ratio
+2025-01-28 11:06:19,439 - INFO - WebDriver closed for URL https://financecharts.com/stocks/INTC/valuation/pe-ratio
+2025-01-28 11:06:19,441 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/INTC/valuation/pe-ratio
+2025-01-28 11:06:19,441 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/INTC/valuation/pe-ratio.
+2025-01-28 11:06:19,441 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:19,593 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:19,804 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:20,011 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:20,827 - INFO - Navigating to https://financecharts.com/stocks/TSM/valuation/pe-ratio
+2025-01-28 11:06:22,119 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TSM/valuation/pe-ratio
+2025-01-28 11:06:22,194 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TSM/valuation/pe-ratio
+2025-01-28 11:06:22,196 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TSM/valuation/pe-ratio
+2025-01-28 11:06:22,196 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/TSM/valuation/pe-ratio.
+2025-01-28 11:06:22,197 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:22,348 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:22,558 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:22,767 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:23,549 - INFO - Navigating to https://financecharts.com/stocks/SWKS/valuation/pe-ratio
+2025-01-28 11:06:23,881 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SWKS/valuation/pe-ratio
+2025-01-28 11:06:23,953 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SWKS/valuation/pe-ratio
+2025-01-28 11:06:23,954 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SWKS/valuation/pe-ratio
+2025-01-28 11:06:23,954 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/SWKS/valuation/pe-ratio.
+2025-01-28 11:06:23,955 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:24,099 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:24,311 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:24,516 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:25,082 - INFO - Navigating to https://financecharts.com/stocks/QRVO/valuation/pe-ratio
+2025-01-28 11:06:25,247 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/QRVO/valuation/pe-ratio
+2025-01-28 11:06:25,322 - INFO - WebDriver closed for URL https://financecharts.com/stocks/QRVO/valuation/pe-ratio
+2025-01-28 11:06:25,322 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/QRVO/valuation/pe-ratio
+2025-01-28 11:06:25,322 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/QRVO/valuation/pe-ratio.
+2025-01-28 11:06:25,323 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:25,410 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:25,620 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:25,824 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:26,395 - INFO - Navigating to https://financecharts.com/stocks/CLS/valuation/pe-ratio
+2025-01-28 11:06:26,736 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CLS/valuation/pe-ratio
+2025-01-28 11:06:26,810 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CLS/valuation/pe-ratio
+2025-01-28 11:06:26,812 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CLS/valuation/pe-ratio
+2025-01-28 11:06:26,812 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CLS/valuation/pe-ratio.
+2025-01-28 11:06:26,812 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:26,951 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:27,156 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:27,363 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:27,990 - INFO - Navigating to https://financecharts.com/stocks/DELL/valuation/pe-ratio
+2025-01-28 11:06:28,330 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DELL/valuation/pe-ratio
+2025-01-28 11:06:28,402 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DELL/valuation/pe-ratio
+2025-01-28 11:06:28,404 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DELL/valuation/pe-ratio
+2025-01-28 11:06:28,404 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/DELL/valuation/pe-ratio.
+2025-01-28 11:06:28,404 - INFO - Processing sector: 原油 with 7 stocks.
+2025-01-28 11:06:28,405 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:28,548 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:28,753 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:28,975 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:29,758 - INFO - Navigating to https://financecharts.com/stocks/CVX/valuation/pe-ratio
+2025-01-28 11:06:30,153 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CVX/valuation/pe-ratio
+2025-01-28 11:06:30,225 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CVX/valuation/pe-ratio
+2025-01-28 11:06:30,227 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CVX/valuation/pe-ratio
+2025-01-28 11:06:30,227 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CVX/valuation/pe-ratio.
+2025-01-28 11:06:30,227 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:30,372 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:30,577 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:30,788 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:31,417 - INFO - Navigating to https://financecharts.com/stocks/OXY/valuation/pe-ratio
+2025-01-28 11:06:31,754 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/OXY/valuation/pe-ratio
+2025-01-28 11:06:31,828 - INFO - WebDriver closed for URL https://financecharts.com/stocks/OXY/valuation/pe-ratio
+2025-01-28 11:06:31,830 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/OXY/valuation/pe-ratio
+2025-01-28 11:06:31,830 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/OXY/valuation/pe-ratio.
+2025-01-28 11:06:31,830 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:31,969 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:32,172 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:32,382 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:32,968 - INFO - Navigating to https://financecharts.com/stocks/ENB/valuation/pe-ratio
+2025-01-28 11:06:33,120 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ENB/valuation/pe-ratio
+2025-01-28 11:06:33,195 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ENB/valuation/pe-ratio
+2025-01-28 11:06:33,197 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ENB/valuation/pe-ratio
+2025-01-28 11:06:33,197 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ENB/valuation/pe-ratio.
+2025-01-28 11:06:33,197 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:33,336 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:33,540 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:33,741 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:34,308 - INFO - Navigating to https://financecharts.com/stocks/XOM/valuation/pe-ratio
+2025-01-28 11:06:34,698 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/XOM/valuation/pe-ratio
+2025-01-28 11:06:34,768 - INFO - WebDriver closed for URL https://financecharts.com/stocks/XOM/valuation/pe-ratio
+2025-01-28 11:06:34,770 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/XOM/valuation/pe-ratio
+2025-01-28 11:06:34,770 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/XOM/valuation/pe-ratio.
+2025-01-28 11:06:34,770 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:34,914 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:35,121 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:35,324 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:35,925 - INFO - Navigating to https://financecharts.com/stocks/CPE/valuation/pe-ratio
+2025-01-28 11:06:36,245 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CPE/valuation/pe-ratio
+2025-01-28 11:06:36,318 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CPE/valuation/pe-ratio
+2025-01-28 11:06:36,320 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CPE/valuation/pe-ratio
+2025-01-28 11:06:36,320 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CPE/valuation/pe-ratio.
+2025-01-28 11:06:36,320 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:36,473 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:36,681 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:36,886 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:37,662 - INFO - Navigating to https://financecharts.com/stocks/COP/valuation/pe-ratio
+2025-01-28 11:06:38,060 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/COP/valuation/pe-ratio
+2025-01-28 11:06:38,134 - INFO - WebDriver closed for URL https://financecharts.com/stocks/COP/valuation/pe-ratio
+2025-01-28 11:06:38,135 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/COP/valuation/pe-ratio
+2025-01-28 11:06:38,135 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/COP/valuation/pe-ratio.
+2025-01-28 11:06:38,135 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:38,286 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:38,493 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:38,699 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:39,455 - INFO - Navigating to https://financecharts.com/stocks/VLO/valuation/pe-ratio
+2025-01-28 11:06:39,944 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/VLO/valuation/pe-ratio
+2025-01-28 11:06:40,020 - INFO - WebDriver closed for URL https://financecharts.com/stocks/VLO/valuation/pe-ratio
+2025-01-28 11:06:40,021 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/VLO/valuation/pe-ratio
+2025-01-28 11:06:40,021 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/VLO/valuation/pe-ratio.
+2025-01-28 11:06:40,022 - INFO - Processing sector: 旅遊 with 10 stocks.
+2025-01-28 11:06:40,022 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:40,165 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:40,374 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:40,586 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:41,351 - INFO - Navigating to https://financecharts.com/stocks/BKNG/valuation/pe-ratio
+2025-01-28 11:06:41,692 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BKNG/valuation/pe-ratio
+2025-01-28 11:06:41,767 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BKNG/valuation/pe-ratio
+2025-01-28 11:06:41,768 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BKNG/valuation/pe-ratio
+2025-01-28 11:06:41,768 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/BKNG/valuation/pe-ratio.
+2025-01-28 11:06:41,769 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:41,922 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:42,131 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:42,340 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:42,935 - INFO - Navigating to https://financecharts.com/stocks/MAR/valuation/pe-ratio
+2025-01-28 11:06:43,256 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MAR/valuation/pe-ratio
+2025-01-28 11:06:43,330 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MAR/valuation/pe-ratio
+2025-01-28 11:06:43,332 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MAR/valuation/pe-ratio
+2025-01-28 11:06:43,332 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MAR/valuation/pe-ratio.
+2025-01-28 11:06:43,332 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:43,485 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:43,695 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:43,899 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:44,680 - INFO - Navigating to https://financecharts.com/stocks/MGM/valuation/pe-ratio
+2025-01-28 11:06:44,839 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MGM/valuation/pe-ratio
+2025-01-28 11:06:44,907 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MGM/valuation/pe-ratio
+2025-01-28 11:06:44,908 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MGM/valuation/pe-ratio
+2025-01-28 11:06:44,908 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MGM/valuation/pe-ratio.
+2025-01-28 11:06:44,908 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:45,036 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:45,262 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:45,470 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:46,254 - INFO - Navigating to https://financecharts.com/stocks/HLT/valuation/pe-ratio
+2025-01-28 11:06:46,613 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/HLT/valuation/pe-ratio
+2025-01-28 11:06:46,686 - INFO - WebDriver closed for URL https://financecharts.com/stocks/HLT/valuation/pe-ratio
+2025-01-28 11:06:46,688 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/HLT/valuation/pe-ratio
+2025-01-28 11:06:46,688 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/HLT/valuation/pe-ratio.
+2025-01-28 11:06:46,688 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:46,839 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:47,050 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:47,258 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:48,047 - INFO - Navigating to https://financecharts.com/stocks/LVS/valuation/pe-ratio
+2025-01-28 11:06:48,401 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/LVS/valuation/pe-ratio
+2025-01-28 11:06:48,472 - INFO - WebDriver closed for URL https://financecharts.com/stocks/LVS/valuation/pe-ratio
+2025-01-28 11:06:48,474 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/LVS/valuation/pe-ratio
+2025-01-28 11:06:48,474 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/LVS/valuation/pe-ratio.
+2025-01-28 11:06:48,474 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:48,626 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:48,831 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:49,037 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:49,832 - INFO - Navigating to https://financecharts.com/stocks/IHG/valuation/pe-ratio
+2025-01-28 11:06:50,180 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/IHG/valuation/pe-ratio
+2025-01-28 11:06:50,254 - INFO - WebDriver closed for URL https://financecharts.com/stocks/IHG/valuation/pe-ratio
+2025-01-28 11:06:50,256 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/IHG/valuation/pe-ratio
+2025-01-28 11:06:50,256 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/IHG/valuation/pe-ratio.
+2025-01-28 11:06:50,256 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:50,407 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:50,611 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:50,822 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:51,433 - INFO - Navigating to https://financecharts.com/stocks/H/valuation/pe-ratio
+2025-01-28 11:06:51,936 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/H/valuation/pe-ratio
+2025-01-28 11:06:52,006 - INFO - WebDriver closed for URL https://financecharts.com/stocks/H/valuation/pe-ratio
+2025-01-28 11:06:52,008 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/H/valuation/pe-ratio
+2025-01-28 11:06:52,008 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/H/valuation/pe-ratio.
+2025-01-28 11:06:52,008 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:52,164 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:52,372 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:52,580 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:53,356 - INFO - Navigating to https://financecharts.com/stocks/ABNB/valuation/pe-ratio
+2025-01-28 11:06:53,516 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ABNB/valuation/pe-ratio
+2025-01-28 11:06:53,592 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ABNB/valuation/pe-ratio
+2025-01-28 11:06:53,593 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ABNB/valuation/pe-ratio
+2025-01-28 11:06:53,593 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ABNB/valuation/pe-ratio.
+2025-01-28 11:06:53,594 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:53,748 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:53,957 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:54,158 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:54,834 - INFO - Navigating to https://financecharts.com/stocks/WYNN/valuation/pe-ratio
+2025-01-28 11:06:55,295 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/WYNN/valuation/pe-ratio
+2025-01-28 11:06:55,364 - INFO - WebDriver closed for URL https://financecharts.com/stocks/WYNN/valuation/pe-ratio
+2025-01-28 11:06:55,366 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/WYNN/valuation/pe-ratio
+2025-01-28 11:06:55,366 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/WYNN/valuation/pe-ratio.
+2025-01-28 11:06:55,366 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:55,516 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:55,734 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:55,940 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:56,541 - INFO - Navigating to https://financecharts.com/stocks/EXPE/valuation/pe-ratio
+2025-01-28 11:06:57,958 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/EXPE/valuation/pe-ratio
+2025-01-28 11:06:58,035 - INFO - WebDriver closed for URL https://financecharts.com/stocks/EXPE/valuation/pe-ratio
+2025-01-28 11:06:58,037 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/EXPE/valuation/pe-ratio
+2025-01-28 11:06:58,037 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/EXPE/valuation/pe-ratio.
+2025-01-28 11:06:58,037 - INFO - Processing sector: 工業 with 15 stocks.
+2025-01-28 11:06:58,038 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:58,192 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:58,400 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:58,603 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:06:59,202 - INFO - Navigating to https://financecharts.com/stocks/SEDG/valuation/pe-ratio
+2025-01-28 11:06:59,536 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SEDG/valuation/pe-ratio
+2025-01-28 11:06:59,609 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SEDG/valuation/pe-ratio
+2025-01-28 11:06:59,610 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SEDG/valuation/pe-ratio
+2025-01-28 11:06:59,610 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/SEDG/valuation/pe-ratio.
+2025-01-28 11:06:59,611 - INFO - ====== WebDriver manager ======
+2025-01-28 11:06:59,752 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:06:59,962 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:00,170 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:00,966 - INFO - Navigating to https://financecharts.com/stocks/APD/valuation/pe-ratio
+2025-01-28 11:07:01,321 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/APD/valuation/pe-ratio
+2025-01-28 11:07:01,396 - INFO - WebDriver closed for URL https://financecharts.com/stocks/APD/valuation/pe-ratio
+2025-01-28 11:07:01,398 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/APD/valuation/pe-ratio
+2025-01-28 11:07:01,398 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/APD/valuation/pe-ratio.
+2025-01-28 11:07:01,398 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:01,552 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:01,760 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:01,970 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:02,563 - INFO - Navigating to https://financecharts.com/stocks/DE/valuation/pe-ratio
+2025-01-28 11:07:02,964 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DE/valuation/pe-ratio
+2025-01-28 11:07:03,037 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DE/valuation/pe-ratio
+2025-01-28 11:07:03,039 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DE/valuation/pe-ratio
+2025-01-28 11:07:03,039 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/DE/valuation/pe-ratio.
+2025-01-28 11:07:03,039 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:03,185 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:03,391 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:03,595 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:04,169 - INFO - Navigating to https://financecharts.com/stocks/ETN/valuation/pe-ratio
+2025-01-28 11:07:04,496 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ETN/valuation/pe-ratio
+2025-01-28 11:07:04,564 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ETN/valuation/pe-ratio
+2025-01-28 11:07:04,565 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ETN/valuation/pe-ratio
+2025-01-28 11:07:04,565 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ETN/valuation/pe-ratio.
+2025-01-28 11:07:04,566 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:04,656 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:04,858 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:05,067 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:05,649 - INFO - Navigating to https://financecharts.com/stocks/HON/valuation/pe-ratio
+2025-01-28 11:07:06,905 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/HON/valuation/pe-ratio
+2025-01-28 11:07:06,980 - INFO - WebDriver closed for URL https://financecharts.com/stocks/HON/valuation/pe-ratio
+2025-01-28 11:07:06,982 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/HON/valuation/pe-ratio
+2025-01-28 11:07:06,982 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/HON/valuation/pe-ratio.
+2025-01-28 11:07:06,982 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:07,132 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:07,336 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:07,542 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:08,133 - INFO - Navigating to https://financecharts.com/stocks/SUM/valuation/pe-ratio
+2025-01-28 11:07:08,469 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SUM/valuation/pe-ratio
+2025-01-28 11:07:08,541 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SUM/valuation/pe-ratio
+2025-01-28 11:07:08,542 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SUM/valuation/pe-ratio
+2025-01-28 11:07:08,543 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/SUM/valuation/pe-ratio.
+2025-01-28 11:07:08,543 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:08,630 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:08,835 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:09,048 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:09,837 - INFO - Navigating to https://financecharts.com/stocks/CAT/valuation/pe-ratio
+2025-01-28 11:07:10,215 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CAT/valuation/pe-ratio
+2025-01-28 11:07:10,286 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CAT/valuation/pe-ratio
+2025-01-28 11:07:10,288 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CAT/valuation/pe-ratio
+2025-01-28 11:07:10,288 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CAT/valuation/pe-ratio.
+2025-01-28 11:07:10,288 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:10,435 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:10,644 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:10,853 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:11,443 - INFO - Navigating to https://financecharts.com/stocks/MMM/valuation/pe-ratio
+2025-01-28 11:07:11,872 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MMM/valuation/pe-ratio
+2025-01-28 11:07:11,947 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MMM/valuation/pe-ratio
+2025-01-28 11:07:11,948 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MMM/valuation/pe-ratio
+2025-01-28 11:07:11,948 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MMM/valuation/pe-ratio.
+2025-01-28 11:07:11,948 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:12,089 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:12,306 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:12,512 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:13,280 - INFO - Navigating to https://financecharts.com/stocks/ENPH/valuation/pe-ratio
+2025-01-28 11:07:13,608 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ENPH/valuation/pe-ratio
+2025-01-28 11:07:13,679 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ENPH/valuation/pe-ratio
+2025-01-28 11:07:13,681 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ENPH/valuation/pe-ratio
+2025-01-28 11:07:13,681 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ENPH/valuation/pe-ratio.
+2025-01-28 11:07:13,681 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:13,816 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:14,025 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:14,229 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:15,007 - INFO - Navigating to https://financecharts.com/stocks/NEE/valuation/pe-ratio
+2025-01-28 11:07:15,514 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NEE/valuation/pe-ratio
+2025-01-28 11:07:15,587 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NEE/valuation/pe-ratio
+2025-01-28 11:07:15,589 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NEE/valuation/pe-ratio
+2025-01-28 11:07:15,589 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NEE/valuation/pe-ratio.
+2025-01-28 11:07:15,590 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:15,730 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:15,935 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:16,142 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:16,919 - INFO - Navigating to https://financecharts.com/stocks/WM/valuation/pe-ratio
+2025-01-28 11:07:17,241 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/WM/valuation/pe-ratio
+2025-01-28 11:07:17,316 - INFO - WebDriver closed for URL https://financecharts.com/stocks/WM/valuation/pe-ratio
+2025-01-28 11:07:17,317 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/WM/valuation/pe-ratio
+2025-01-28 11:07:17,317 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/WM/valuation/pe-ratio.
+2025-01-28 11:07:17,318 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:17,468 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:17,676 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:17,881 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:18,472 - INFO - Navigating to https://financecharts.com/stocks/FSLR/valuation/pe-ratio
+2025-01-28 11:07:18,827 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/FSLR/valuation/pe-ratio
+2025-01-28 11:07:18,903 - INFO - WebDriver closed for URL https://financecharts.com/stocks/FSLR/valuation/pe-ratio
+2025-01-28 11:07:18,905 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/FSLR/valuation/pe-ratio
+2025-01-28 11:07:18,905 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/FSLR/valuation/pe-ratio.
+2025-01-28 11:07:18,905 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:19,056 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:19,263 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:19,469 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:20,368 - INFO - Navigating to https://financecharts.com/stocks/GE/valuation/pe-ratio
+2025-01-28 11:07:20,865 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GE/valuation/pe-ratio
+2025-01-28 11:07:20,940 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GE/valuation/pe-ratio
+2025-01-28 11:07:20,942 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GE/valuation/pe-ratio
+2025-01-28 11:07:20,942 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/GE/valuation/pe-ratio.
+2025-01-28 11:07:20,942 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:21,153 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:21,359 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:21,567 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:22,255 - INFO - Navigating to https://financecharts.com/stocks/X/valuation/pe-ratio
+2025-01-28 11:07:22,762 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/X/valuation/pe-ratio
+2025-01-28 11:07:22,838 - INFO - WebDriver closed for URL https://financecharts.com/stocks/X/valuation/pe-ratio
+2025-01-28 11:07:22,840 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/X/valuation/pe-ratio
+2025-01-28 11:07:22,840 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/X/valuation/pe-ratio.
+2025-01-28 11:07:22,840 - INFO - ====== WebDriver manager ======
+2025-01-28 11:07:22,983 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:23,187 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-28 11:07:23,392 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.110/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-28 11:07:24,196 - INFO - Navigating to https://financecharts.com/stocks/HD/valuation/pe-ratio
+2025-01-28 11:07:24,532 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/HD/valuation/pe-ratio
+2025-01-28 11:07:24,604 - INFO - WebDriver closed for URL https://financecharts.com/stocks/HD/valuation/pe-ratio
+2025-01-28 11:07:24,605 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/HD/valuation/pe-ratio
+2025-01-28 11:07:24,605 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/HD/valuation/pe-ratio.
+2025-01-28 11:07:24,629 - INFO - Saved all PE ratios to 'stock_pe_ratios.csv'.
+2025-01-31 12:55:42,907 - INFO - ====== WebDriver manager ======
+2025-01-31 12:55:48,708 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:55:48,938 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:55:49,147 - INFO - There is no [mac64] chromedriver "132.0.6834.159" for browser google-chrome "132.0.6834" in cache
+2025-01-31 12:55:49,163 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:55:49,679 - INFO - WebDriver version 132.0.6834.159 selected
+2025-01-31 12:55:49,682 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.159/mac-arm64/chromedriver-mac-arm64.zip
+2025-01-31 12:55:49,682 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.159/mac-arm64/chromedriver-mac-arm64.zip
+2025-01-31 12:55:49,933 - INFO - Driver downloading response is 200
+2025-01-31 12:55:50,081 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:55:50,360 - INFO - Driver has been saved in cache [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159]
+2025-01-31 12:55:51,794 - INFO - 处理行业: 大科技，共有 8 只股票。
+2025-01-31 12:55:51,852 - INFO - 导航到 https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:55:52,810 - INFO - 成功获取页面HTML: https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:55:52,941 - ERROR - 未能在HTML中找到5Y PE平均值: https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:55:54,768 - INFO - 导航到 https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:55:54,989 - INFO - 成功获取页面HTML: https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:55:54,990 - ERROR - 未能在HTML中找到5Y PE平均值: https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:55:57,559 - INFO - 导航到 https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:55:57,669 - INFO - 成功获取页面HTML: https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:55:57,671 - ERROR - 未能在HTML中找到5Y PE平均值: https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:55:59,417 - INFO - 导航到 https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:55:59,539 - INFO - 成功获取页面HTML: https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:55:59,540 - ERROR - 未能在HTML中找到5Y PE平均值: https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:02,222 - INFO - 导航到 https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:02,324 - INFO - 成功获取页面HTML: https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:02,325 - ERROR - 未能在HTML中找到5Y PE平均值: https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:21,359 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 12:56:21,371 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:21,587 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:21,804 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:22,012 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:23,442 - INFO - Navigating to https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,364 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,443 - INFO - WebDriver closed for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,505 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,505 - INFO - Found PE text: '26.02' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,505 - INFO - Extracted 5Y PE Average: 26.02 for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 12:56:24,506 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:24,662 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:24,869 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:25,077 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:25,873 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,562 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,644 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,729 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,730 - INFO - Found PE text: '55.79' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,730 - INFO - Extracted 5Y PE Average: 55.79 for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 12:56:26,730 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:26,875 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:27,080 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:27,294 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:27,884 - INFO - Navigating to https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:28,880 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:28,956 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:29,017 - INFO - Found 20 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:29,017 - INFO - Found PE text: '25.43' in URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:29,017 - INFO - Extracted 5Y PE Average: 25.43 for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 12:56:29,017 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:29,167 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:29,369 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:29,580 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:30,348 - INFO - Navigating to https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:30,947 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:31,028 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:31,096 - INFO - Found 28 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:31,096 - INFO - Found PE text: '33.60' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:31,096 - INFO - Extracted 5Y PE Average: 33.6 for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 12:56:31,096 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:31,256 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:31,462 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:31,669 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:32,443 - INFO - Navigating to https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:33,044 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:33,119 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:33,126 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 12:56:33,126 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio.
+2025-01-31 12:56:33,126 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:33,276 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:33,483 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:33,688 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:34,306 - INFO - Navigating to https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 12:56:35,275 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 12:56:35,357 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 12:56:35,365 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 12:56:35,366 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio.
+2025-01-31 12:56:35,366 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:35,506 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:35,707 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:35,909 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:36,687 - INFO - Navigating to https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 12:56:37,373 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 12:56:37,451 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 12:56:37,459 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 12:56:37,459 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio.
+2025-01-31 12:56:37,459 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:37,617 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:37,820 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:38,031 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:38,615 - INFO - Navigating to https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:56:39,422 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:56:39,495 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:56:39,531 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio
+2025-01-31 12:56:39,531 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/TSLA/valuation/pe-ratio.
+2025-01-31 12:56:39,531 - INFO - Processing sector: 航空郵輪 with 9 stocks.
+2025-01-31 12:56:39,532 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:39,681 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:39,891 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:40,099 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:40,675 - INFO - Navigating to https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-31 12:56:41,836 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-31 12:56:41,909 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-31 12:56:41,916 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BA/valuation/pe-ratio
+2025-01-31 12:56:41,916 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/BA/valuation/pe-ratio.
+2025-01-31 12:56:41,916 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:42,059 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:42,273 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:42,482 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:43,072 - INFO - Navigating to https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-31 12:56:43,706 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-31 12:56:43,780 - INFO - WebDriver closed for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-31 12:56:43,788 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/LUV/valuation/pe-ratio
+2025-01-31 12:56:43,788 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/LUV/valuation/pe-ratio.
+2025-01-31 12:56:43,789 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:43,946 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:44,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:44,358 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:44,967 - INFO - Navigating to https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-31 12:56:46,145 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-31 12:56:46,219 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-31 12:56:46,226 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DAL/valuation/pe-ratio
+2025-01-31 12:56:46,226 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/DAL/valuation/pe-ratio.
+2025-01-31 12:56:46,226 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:46,387 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:46,590 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:46,793 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:47,543 - INFO - Navigating to https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-31 12:56:48,176 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-31 12:56:48,252 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-31 12:56:48,260 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ALK/valuation/pe-ratio
+2025-01-31 12:56:48,260 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ALK/valuation/pe-ratio.
+2025-01-31 12:56:48,260 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:48,409 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:48,616 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:48,825 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:49,433 - INFO - Navigating to https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-31 12:56:50,053 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-31 12:56:50,130 - INFO - WebDriver closed for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-31 12:56:50,138 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/RCL/valuation/pe-ratio
+2025-01-31 12:56:50,138 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/RCL/valuation/pe-ratio.
+2025-01-31 12:56:50,138 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:50,288 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:50,492 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:50,707 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:51,309 - INFO - Navigating to https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-31 12:56:51,936 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-31 12:56:52,011 - INFO - WebDriver closed for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-31 12:56:52,018 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio
+2025-01-31 12:56:52,018 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/EADSY/valuation/pe-ratio.
+2025-01-31 12:56:52,018 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:52,161 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:52,374 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:52,586 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:53,175 - INFO - Navigating to https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-31 12:56:53,944 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-31 12:56:54,018 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-31 12:56:54,024 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CCL/valuation/pe-ratio
+2025-01-31 12:56:54,024 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CCL/valuation/pe-ratio.
+2025-01-31 12:56:54,025 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:54,162 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:54,363 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:54,571 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:55,161 - INFO - Navigating to https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-31 12:56:55,854 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-31 12:56:55,930 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-31 12:56:55,937 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAL/valuation/pe-ratio
+2025-01-31 12:56:55,937 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAL/valuation/pe-ratio.
+2025-01-31 12:56:55,937 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:56,024 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:56,243 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:56,453 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:57,050 - INFO - Navigating to https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-31 12:56:58,040 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-31 12:56:58,114 - INFO - WebDriver closed for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-31 12:56:58,121 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/UAL/valuation/pe-ratio
+2025-01-31 12:56:58,121 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/UAL/valuation/pe-ratio.
+2025-01-31 12:56:58,121 - INFO - Processing sector: 銀行 with 8 stocks.
+2025-01-31 12:56:58,122 - INFO - ====== WebDriver manager ======
+2025-01-31 12:56:58,277 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:58,483 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:56:58,692 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:56:59,468 - INFO - Navigating to https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-31 12:57:00,110 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-31 12:57:00,185 - INFO - WebDriver closed for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-31 12:57:00,192 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/WFC/valuation/pe-ratio
+2025-01-31 12:57:00,192 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/WFC/valuation/pe-ratio.
+2025-01-31 12:57:00,192 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:00,341 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:00,552 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:00,764 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:01,356 - INFO - Navigating to https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-31 12:57:02,029 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-31 12:57:02,099 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-31 12:57:02,106 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/GS/valuation/pe-ratio
+2025-01-31 12:57:02,106 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/GS/valuation/pe-ratio.
+2025-01-31 12:57:02,106 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:02,232 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:02,434 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:02,640 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:03,400 - INFO - Navigating to https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-31 12:57:04,156 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-31 12:57:04,230 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-31 12:57:04,237 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BLK/valuation/pe-ratio
+2025-01-31 12:57:04,237 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/BLK/valuation/pe-ratio.
+2025-01-31 12:57:04,237 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:04,386 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:04,598 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:04,804 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:05,589 - INFO - Navigating to https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-31 12:57:06,210 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-31 12:57:06,284 - INFO - WebDriver closed for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-31 12:57:06,291 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/BAC/valuation/pe-ratio
+2025-01-31 12:57:06,291 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/BAC/valuation/pe-ratio.
+2025-01-31 12:57:06,291 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:06,443 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:06,642 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:06,844 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:07,607 - INFO - Navigating to https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-31 12:57:08,546 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-31 12:57:08,616 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-31 12:57:08,623 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NU/valuation/pe-ratio
+2025-01-31 12:57:08,623 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NU/valuation/pe-ratio.
+2025-01-31 12:57:08,624 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:08,773 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:08,975 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:09,179 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:09,743 - INFO - Navigating to https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-31 12:57:10,547 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-31 12:57:10,624 - INFO - WebDriver closed for URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-31 12:57:10,631 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/C/valuation/pe-ratio
+2025-01-31 12:57:10,631 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/C/valuation/pe-ratio.
+2025-01-31 12:57:10,631 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:10,789 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:10,994 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:11,200 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:11,764 - INFO - Navigating to https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-31 12:57:12,574 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-31 12:57:12,650 - INFO - WebDriver closed for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-31 12:57:12,657 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/JPM/valuation/pe-ratio
+2025-01-31 12:57:12,657 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/JPM/valuation/pe-ratio.
+2025-01-31 12:57:12,657 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:12,807 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:13,038 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:13,243 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:14,022 - INFO - Navigating to https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-31 12:57:14,661 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-31 12:57:14,735 - INFO - WebDriver closed for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-31 12:57:14,742 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio
+2025-01-31 12:57:14,742 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/SOFI/valuation/pe-ratio.
+2025-01-31 12:57:14,742 - INFO - Processing sector: 傳統 with 6 stocks.
+2025-01-31 12:57:14,743 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:14,893 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:15,087 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:15,298 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:15,890 - INFO - Navigating to https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-31 12:57:17,201 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-31 12:57:17,277 - INFO - WebDriver closed for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-31 12:57:17,284 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/UNH/valuation/pe-ratio
+2025-01-31 12:57:17,284 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/UNH/valuation/pe-ratio.
+2025-01-31 12:57:17,284 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:17,429 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:17,638 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:17,846 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:18,422 - INFO - Navigating to https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-31 12:57:19,077 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-31 12:57:19,151 - INFO - WebDriver closed for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-31 12:57:19,158 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/TRV/valuation/pe-ratio
+2025-01-31 12:57:19,158 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/TRV/valuation/pe-ratio.
+2025-01-31 12:57:19,158 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:19,315 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:19,529 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:19,744 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:20,335 - INFO - Navigating to https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-31 12:57:21,008 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-31 12:57:21,084 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-31 12:57:21,092 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio
+2025-01-31 12:57:21,092 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ABBV/valuation/pe-ratio.
+2025-01-31 12:57:21,092 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:21,249 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:21,466 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:21,669 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:22,251 - INFO - Navigating to https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-31 12:57:23,435 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-31 12:57:23,508 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-31 12:57:23,515 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio
+2025-01-31 12:57:23,515 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ISRG/valuation/pe-ratio.
+2025-01-31 12:57:23,515 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:23,661 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:23,869 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:24,077 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:24,839 - INFO - Navigating to https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-31 12:57:25,572 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-31 12:57:25,647 - INFO - WebDriver closed for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-31 12:57:25,654 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/CVS/valuation/pe-ratio
+2025-01-31 12:57:25,654 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/CVS/valuation/pe-ratio.
+2025-01-31 12:57:25,655 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:25,806 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:26,012 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:26,225 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:26,798 - INFO - Navigating to https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-31 12:57:27,766 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-31 12:57:27,840 - INFO - WebDriver closed for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-31 12:57:27,847 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/DIS/valuation/pe-ratio
+2025-01-31 12:57:27,847 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/DIS/valuation/pe-ratio.
+2025-01-31 12:57:27,848 - INFO - Processing sector: 支付 with 4 stocks.
+2025-01-31 12:57:27,848 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:27,984 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:28,187 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:28,393 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:28,976 - INFO - Navigating to https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-31 12:57:29,747 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-31 12:57:29,819 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-31 12:57:29,826 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MA/valuation/pe-ratio
+2025-01-31 12:57:29,826 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MA/valuation/pe-ratio.
+2025-01-31 12:57:29,826 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:29,980 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:30,190 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:30,400 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:31,166 - INFO - Navigating to https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-31 12:57:31,772 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-31 12:57:31,845 - INFO - WebDriver closed for URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-31 12:57:31,852 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/V/valuation/pe-ratio
+2025-01-31 12:57:31,853 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/V/valuation/pe-ratio.
+2025-01-31 12:57:31,853 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:31,995 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:32,198 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:32,408 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 12:57:33,171 - INFO - Navigating to https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-31 12:57:33,890 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-31 12:57:33,966 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-31 12:57:33,973 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AXP/valuation/pe-ratio
+2025-01-31 12:57:33,973 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AXP/valuation/pe-ratio.
+2025-01-31 12:57:33,974 - INFO - ====== WebDriver manager ======
+2025-01-31 12:57:34,122 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:34,338 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 12:57:34,550 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:02:24,670 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 13:02:24,680 - INFO - ====== WebDriver manager ======
+2025-01-31 13:02:24,908 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:25,122 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:25,335 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:02:26,605 - INFO - Navigating to https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:02:27,323 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:02:27,400 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:02:27,407 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:02:27,407 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio.
+2025-01-31 13:02:43,468 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 13:02:43,477 - INFO - ====== WebDriver manager ======
+2025-01-31 13:02:43,696 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:43,903 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:44,109 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:02:45,256 - INFO - Navigating to https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:02:45,916 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:02:45,993 - INFO - WebDriver closed for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:02:46,000 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:02:46,000 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/META/valuation/pe-ratio.
+2025-01-31 13:02:55,057 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 13:02:55,064 - INFO - ====== WebDriver manager ======
+2025-01-31 13:02:55,217 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:55,424 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:55,632 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:02:56,257 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:02:57,000 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:02:57,077 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:02:57,084 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:02:57,084 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio.
+2025-01-31 13:02:58,991 - INFO - ====== WebDriver manager ======
+2025-01-31 13:02:59,191 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:59,400 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:02:59,602 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:00,184 - INFO - Navigating to https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:03:00,890 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:03:00,967 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:03:00,973 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:03:00,973 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio.
+2025-01-31 13:03:03,695 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:03,889 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:04,089 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:04,294 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:04,874 - INFO - Navigating to https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:05,832 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:05,911 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:05,918 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:05,918 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio.
+2025-01-31 13:03:20,192 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 13:03:20,198 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:20,399 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:20,615 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:20,828 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:21,870 - INFO - Navigating to https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:03:22,767 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:03:22,837 - INFO - WebDriver closed for URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:03:22,845 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/META/valuation/pe-ratio
+2025-01-31 13:03:22,845 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/META/valuation/pe-ratio.
+2025-01-31 13:03:22,845 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:23,009 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:23,218 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:23,424 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:24,201 - INFO - Navigating to https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:03:24,858 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:03:24,931 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:03:24,938 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:03:24,938 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio.
+2025-01-31 13:03:24,938 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:25,093 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:25,298 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:25,500 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:26,079 - INFO - Navigating to https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:03:26,703 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:03:26,780 - INFO - WebDriver closed for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:03:26,787 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio
+2025-01-31 13:03:26,787 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/MSFT/valuation/pe-ratio.
+2025-01-31 13:03:26,787 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:26,873 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:27,085 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:27,288 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:27,874 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:03:28,495 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:03:28,571 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:03:28,578 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:03:28,578 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio.
+2025-01-31 13:03:28,578 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:28,727 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:28,927 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:03:29,132 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:03:29,896 - INFO - Navigating to https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:30,635 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:30,711 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:30,717 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 13:03:30,718 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio.
+2025-01-31 13:03:30,718 - INFO - ====== WebDriver manager ======
+2025-01-31 13:03:30,866 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:46,144 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 13:37:46,210 - INFO - ====== WebDriver manager ======
+2025-01-31 13:37:46,354 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:46,565 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:46,774 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:37:47,837 - INFO - Navigating to https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:37:48,619 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:37:48,693 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:37:48,701 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 13:37:48,701 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio.
+2025-01-31 13:37:48,702 - INFO - ====== WebDriver manager ======
+2025-01-31 13:37:48,840 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:49,048 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:49,254 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:37:49,890 - INFO - Navigating to https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:37:50,588 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:37:50,664 - INFO - WebDriver closed for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:37:50,671 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio
+2025-01-31 13:37:50,671 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/NFLX/valuation/pe-ratio.
+2025-01-31 13:37:50,671 - INFO - ====== WebDriver manager ======
+2025-01-31 13:37:50,811 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:51,019 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:51,231 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 13:37:51,826 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:37:52,674 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:37:52,747 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:37:52,753 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 13:37:52,753 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio.
+2025-01-31 13:37:52,753 - INFO - ====== WebDriver manager ======
+2025-01-31 13:37:52,900 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:53,111 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 13:37:53,317 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 20:25:45,796 - INFO - Processing sector: 大科技 with 8 stocks.
+2025-01-31 20:25:45,805 - INFO - ====== WebDriver manager ======
+2025-01-31 20:25:46,488 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:46,725 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:46,939 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 20:25:48,754 - INFO - Navigating to https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 20:25:52,089 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 20:25:52,165 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 20:25:52,173 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio
+2025-01-31 20:25:52,173 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AAPL/valuation/pe-ratio.
+2025-01-31 20:25:52,173 - INFO - ====== WebDriver manager ======
+2025-01-31 20:25:52,317 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:52,522 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:52,729 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 20:25:53,546 - INFO - Navigating to https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 20:25:54,191 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 20:25:54,266 - INFO - WebDriver closed for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 20:25:54,273 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio
+2025-01-31 20:25:54,273 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/ADBE/valuation/pe-ratio.
+2025-01-31 20:25:54,274 - INFO - ====== WebDriver manager ======
+2025-01-31 20:25:54,417 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:54,634 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:54,847 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 20:25:55,459 - INFO - Navigating to https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 20:25:56,064 - INFO - Retrieved page HTML successfully for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 20:25:56,142 - INFO - WebDriver closed for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 20:25:56,149 - INFO - Found 0 div(s) with class 'col faq' in URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio
+2025-01-31 20:25:56,149 - ERROR - Failed to locate the 5Y PE average in the HTML for URL https://financecharts.com/stocks/AMZN/valuation/pe-ratio.
+2025-01-31 20:25:56,149 - INFO - ====== WebDriver manager ======
+2025-01-31 20:25:56,284 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:56,499 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-31 20:25:56,702 - INFO - Driver [/Users/yankesswang/.wdm/drivers/chromedriver/mac64/132.0.6834.159/chromedriver-mac-arm64/chromedriver] found in cache
+2025-01-31 20:25:57,298 - INFO - Navigating to https://financecharts.com/stocks/GOOG/valuation/pe-ratio
+2025-01-31 20:25:57,365 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10510b700>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/7c612ca8dac7429845c1d1f178a90ee7
+2025-01-31 20:25:57,369 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10510b8e0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/7c612ca8dac7429845c1d1f178a90ee7
+2025-01-31 20:25:57,369 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10510b850>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/7c612ca8dac7429845c1d1f178a90ee7
+2025-01-31 20:25:57,373 - INFO - WebDriver closed for URL https://financecharts.com/stocks/GOOG/valuation/pe-ratio
