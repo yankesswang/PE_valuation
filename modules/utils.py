@@ -12,6 +12,14 @@ from requests.exceptions import HTTPError, RequestException
 from tqdm import tqdm  # Optional: For progress bars
 
 
+def clean_soup_value(soup):
+    """Clean and convert the value to a numeric type if applicable in Stock analysis web."""  
+    clean_soup = soup.split('const data = ')[1].split(";")[0]
+    data_string = clean_soup.replace("void 0", "null")
+    data_string = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)(:)', r'\1"\2"\3', data_string)
+    data_string = data_string.replace("'", '"')
+    return data_string
+
 def fetch_url(url, headers, max_retries=3, timeout=10, sleep_between_retries=2):
     """
     Fetches the content of a URL with retries.

@@ -1,9 +1,10 @@
 import pandas as pd
-import re
+import re, json, json5
 import yfinance as yf
 
 # custom imports
 from utils import fetch_url, parse_html, extract_percentage
+import ast
 
 class StockAnalysisScraper:
     def __init__(self, ticker, current_year = 2025):
@@ -31,6 +32,25 @@ class StockAnalysisScraper:
 
         soup = parse_html(response.text)
         table = soup.find('table', {'class': 'w-full whitespace-nowrap border border-gray-200 text-right text-sm dark:border-dark-700 sm:text-base'})
+        js_string = str(soup).split('const data')[-1]
+        # print(js_string)
+        
+        js_string = re.sub(r'<[^>]+>', '', js_string)
+    
+        # Find the array assignment pattern
+        # Look for patterns like "= [" or "data = [" 
+        array_match = re.search(r'=\s*(\[.*?\]);?\s*(?:Promise|$)', js_string, re.DOTALL)
+        
+        if not array_match:
+            # Try alternative pattern - look for standalone array
+            array_match = re.search(r'(\[.*?\]);?\s*(?:Promise|$)', js_string, re.DOTALL)
+        
+        if not array_match:
+            raise ValueError("No JavaScript array found in the string")
+        
+        array_str = array_match.group(1)
+       
+       
 
         if not table:
             print(f"No forecast table found for {self.ticker}")
@@ -112,7 +132,7 @@ class StockAnalysisScraper:
                 'revenue_growth_5y': None,
                 'eps_growth_5y': None
             }
-            
+            print(soup.prettify())
             # Find elements containing the forecasts
             for row in soup.find_all('tr'):
                 cells = row.find_all('td')
@@ -148,7 +168,7 @@ class StockAnalysisScraper:
         """
         try:
             stock = yf.Ticker(self.ticker)
-            
+            print(stock.info)
             market_cap = round(int(stock.info['marketCap'])/1000000000, 2) if 'marketCap' in stock.info else "NA"
             current_price = stock.info['currentPrice'] if 'currentPrice' in stock.info else "NA"
             beta_value = stock.info['beta'] if 'beta' in stock.info else "NA"
@@ -162,4 +182,11 @@ class StockAnalysisScraper:
         except Exception as e:
             print(f"Error retrieving data for {self.ticker}: {e}")
             return None
-        
+
+
+if __name__ == '__main__':
+    scraper = StockAnalysisScraper('AAPL', 2025)
+
+    print(scraper.get_growth_forecasts())
+    # print(scraper.get_eps_forecast())
+    # print(scraper.get_market_cap_and_price())

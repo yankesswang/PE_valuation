@@ -11,30 +11,25 @@ from pe_scraper import analyze_pe_ratios, parse_pe_ratios
 
 class Valuation_Analyzer:
     STOCK_LIST = {
-        # "大科技": {"GOOG", "META", "AMZN", "NFLX", "AAPL", "MSFT", "TSLA", "ADBE"},
-        # "航空郵輪": {"AAL", "LUV", "DAL", "UAL", "ALK", "BA", "CCL", "RCL"},
-        # "銀行": {"BAC", "JPM", "GS", "C", "WFC", 'NU', 'SOFI'},
-        # "傳統": {"DIS", "ISRG", "UNH", "ABBV", "CVS", 'TRV'},
-        # "支付": {"MA", "V", "PYPL", "AXP"},
-        # "零售": {"LULU", "COST", "PG", "KR", "JWN", "NKE", "DG", "FL", "EL", "PVH", "TPR"},
-        # "食品": {"HIMS", "CELH","TSN", "MNST", "MCD", "SBUX", "KO", "PEP", "CMG", "YUM", 'DPZ', 'CAKE', 'JACK', 'PLAY', 'FIZZ', 'BLMN', 'DENN', 'DIN'},
-        # "半導體": {'NVDA', "TSM", "AMD", "QCOM", "MU", "INTC", "ASML", "SWKS", "QRVO", "AVGO", "AMAT", 'MRVL', 'ARM', 'CLS', 'DELL', 'HPE'},
-        # "原油": {"CVX", "VLO", "COP", "XOM", "OXY",},
-        # "旅遊": {"BKNG", "EXPE", "MAR", "HLT", "ABNB", "H", "WYNN", "IHG", "LVS", "MGM"},
-        # "工業": {'NEE', "DE", "HD", "APD", "CAT", "ETN", "HON", "WM", "GE", "MMM", "SUM", "X", 'ENPH', 'SEDG', "FSLR"},
-        # 'SaaS': {'SAP', 'CFLT', 'ACN', 'BSX', 'SHOP', 'CRM', 'DDOG', 'NOW', 'INTU', 'SQ', 'WDAY', 'SNOW', 'MDB', 'OKTA', 'ADSK', 'TTD'},
+        "大科技": {"GOOG", "META", "AMZN", "NFLX", "AAPL", "MSFT", "TSLA", "ADBE"},
+        "航空郵輪": {"AAL", "LUV", "DAL", "UAL", "ALK", "BA", "CCL", "RCL"},
+        "銀行": {"BAC", "JPM", "GS", "C", "WFC", 'NU', 'SOFI'},
+        "傳統": {"DIS", "ISRG", "UNH", "ABBV", "CVS", 'TRV'},
+        "支付": {"MA", "V", "PYPL", "AXP"},
+        "零售": {"LULU", "COST", "PG", "KR", "JWN", "NKE", "DG", "FL", "EL", "PVH", "TPR"},
+        "食品": {"HIMS", "CELH","TSN", "MNST", "MCD", "SBUX", "KO", "PEP", "CMG", "YUM", 'DPZ', 'CAKE', 'JACK', 'PLAY', 'FIZZ', 'BLMN', 'DENN', 'DIN'},
+        "半導體": {'NVDA', "TSM", "AMD", "QCOM", "MU", "INTC", "ASML", "SWKS", "QRVO", "AVGO", "AMAT", 'MRVL', 'ARM', 'CLS', 'DELL', 'HPE'},
+        "原油": {"CVX", "VLO", "COP", "XOM", "OXY",},
+        "旅遊": {"BKNG", "EXPE", "MAR", "HLT", "ABNB", "H", "WYNN", "IHG", "LVS", "MGM"},
+        "工業": {'NEE', "DE", "HD", "APD", "CAT", "ETN", "HON", "WM", "GE", "MMM", "SUM", "X", 'ENPH', 'SEDG', "FSLR", "VRTV", "OKLO"},
+        'SaaS': {'SAP', 'CFLT', 'ACN', 'BSX', 'SHOP', 'CRM', 'DDOG', 'NOW', 'INTU', 'SQ', 'WDAY', 'SNOW', 'MDB', 'OKTA', 'ADSK', 'TTD', 'INOD'},
         
         '軟體':   {
-            "U", "RBLX",   "SNAP",   "PINS",   "EA", "SHOP"
-            "Z",      "META",   "BKNG",   "TTD",    "APP",
-            "GOOGL",  "ABNB",   "ETSY",   "AMZN",   "EBAY",
-            "DASH",   "TTWO",   "MTCH",   "EXPE",   "UBER",
-            "TEAM",   "DDOG",   "CFLT",   "SPLK",   "SNOW",
+            "U", "RBLX",   "SNAP",   "PINS", "Z",   "TTD",    "APP",   "ETSY", "RDDT","DASH",   "TWLO",   "MTCH",   "EXPE",   "UBER", "SPLK",   
             "WDAY",   "OKTA",   "MDB",    "PATH",   "HUBS",
-            "CYBR",   "NET",    "ZS",     "PANW",   "CRWD",
-            "ADSK",   "SHOP",   "NOW",    "GDDY",   "DOCU",
-            "PLTR",   "ADBE",   "ORCL",   "CRM",    "DT",
-            "CHKP",   "FTNT",   "AKAM",   "TOST",   "GEN",
+            "CYBR",   "NET",    "ZS",     "PANW",   "CRWD",     "DOCU",
+            "PLTR",    "ORCL",    
+            "CHKP",   "FTNT",   "AKAM",    "GEN",
         }
     }
 
@@ -245,13 +240,13 @@ class Valuation_Analyzer:
 
 if __name__ == "__main__":
     # Instantiate the analyzer only once, without specifying a ticker
-    analyzer = Valuation_Analyzer(2025)
-    res = analyzer.process_company('ADBE')
-    print(res)
     # analyzer = Valuation_Analyzer(2025)
+    # res = analyzer.process_company('ADBE')
+    # print(res)
+    analyzer = Valuation_Analyzer(2025)
     
-    # # Gather the data for all industries/companies
-    # df_dict = analyzer.aggregate_company_data()
+    # Gather the data for all industries/companies
+    df_dict = analyzer.aggregate_company_data()
     
-    # # Save results to Excel
-    # analyzer.save_to_excel(df_dict, f'../valuation/stock_data_software_{date.today()}.xlsx')
+    # Save results to Excel
+    analyzer.save_to_excel(df_dict, f'../valuation/stock_data_software_{date.today()}.xlsx')
