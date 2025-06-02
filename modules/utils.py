@@ -11,6 +11,13 @@ from bs4 import BeautifulSoup
 from requests.exceptions import HTTPError, RequestException
 from tqdm import tqdm  # Optional: For progress bars
 
+def clean_json_data(data_string):
+    """Clean and prepare string data for JSON parsing in getting quarterly forecast data."""
+    data_string = data_string.replace("[PRO]", 'null')
+    data_string = data_string.replace("undefined", "null").strip()
+    data_string = re.sub(r'(?<!\d)(-\.)(\d+)', r'-0.\2', data_string)  # Convert -.X to -0.X
+    data_string = re.sub(r'(?<!\d)(\.)(\d+)', r'0.\2', data_string)    # Convert .X to 0.X
+    return data_string
 
 def clean_soup_value(soup):
     """Clean and convert the value to a numeric type if applicable in Stock analysis web."""  

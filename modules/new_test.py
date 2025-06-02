@@ -1,41 +1,74 @@
-from utils import fetch_url, parse_html, extract_percentage
-import re, json
+from utils import fetch_url, parse_html, extract_percentage, clean_soup_value, clean_json_data
+import re
+import json
 from names import ratio_names, forecast_names
 
-ticker = "NVDA"  # Example ticker symbol, replace with actual ticker
-# url = f"https://stockanalysis.com/stocks/{ticker}/statistics/"
-url = f"https://stockanalysis.com/stocks/{ticker}/forecast/"
-headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
-                      ' Chrome/91.0.4472.124 Safari/537.36'
+def fetch_stock_data(ticker, endpoint="forecast"):
+    """Fetch data from StockAnalysis for the given ticker and endpoint."""
+    url = f"https://stockanalysis.com/stocks/{ticker}/{endpoint}/"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
+    response = fetch_url(url, headers)
+    return parse_html(response.text) if response else None
+
+def parse_annual_data(json_string):
+    """Parse annual financial data from JSON string."""
+    annual_part = json_string.split("annual")[1].split("quarterly")[0][2:-2]
+    annual_part = clean_json_data(annual_part)
+    return json.loads(annual_part)
+
+def parse_quarterly_data(json_string):
+    """Parse quarterly financial data from JSON string."""
+    quarterly_part = json_string.split("quarterly")[-1].split("estimatesCharts")[0][2:-4]
+    # print(f"Raw quarterly part: {quarterly_part}")  # Debugging output
+    quarterly_part = clean_json_data(quarterly_part)
+    # print(f"Quarterly part: {quarterly_part}")  # Debugging output
+    return json.loads(quarterly_part)
+
+def create_stock_data_dict(ticker, annual_data, quarterly_data):
+    """Create a structured dictionary from parsed stock data."""
+    return {
+        ticker: {
+            'annual': {
+                "current_eps": annual_data['epsThis']['last'],
+                "current_growth": annual_data['epsThis']['growth'],
+                "next_year_eps": annual_data['epsNext']['last'],
+                "next_year_growth": annual_data['epsNext']['growth'],
+                "current_revenue": annual_data['revenueThis']['last'],
+                "current_revenue_growth": annual_data['revenueThis']['growth'],
+                "next_year_revenue": annual_data['revenueNext']['last'],
+                "next_year_revenue_growth": annual_data['revenueNext']['growth'],
+            },
+            'quarterly': {
+                "eps": quarterly_data['eps'],
+                "revenue": quarterly_data['revenue'],
+                "revenue_growth": quarterly_data['revenueGrowth'],
+                "eps_growth": quarterly_data['epsGrowth'],
+                "year": quarterly_data['fiscalYear'],
+                "quarter": quarterly_data['fiscalQuarter'],
+            }
         }
+    }
 
-response = fetch_url(url,headers)
-soup = str(parse_html(response.text))
-# print(soup)
+def main():
+    ticker = "AAPL"  # Example ticker symbol
+    
+    # For actual web fetching:
+    soup_content = str(fetch_stock_data(ticker))
 
-def clean_soup_value(soup):
-    """Clean and convert the value to a numeric type if applicable."""  
-    clean_soup = soup.split('const data = ')[1].split(";")[0]
-    data_string = clean_soup.replace("void 0", "null")
-    data_string = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)(:)', r'\1"\2"\3', data_string)
-    data_string = data_string.replace("'", '"')
-    return data_string
+    try:
+        if 'ex:"NASDAQ"' in soup_content:
+            split_after_ex = soup_content.split('ex:"NASDAQ"')[1]
+            if 'pd:' in split_after_ex:
+                json_string = split_after_ex.split('pd:')[1].split(',td')[0].strip('"')
+                print(f"Extracted JSON string: {json_string}")  # Debugging output
+            else:
+                json_string = "No pricing data found"
+        else:
+            json_string = "NASDAQ exchange marker not found"
+    except Exception as e:
+        json_string = f"Error parsing data: {str(e)}" 
 
-data_string = clean_soup_value(soup)    
-# print(data_string)
-
-r_string = data_string.split("quarterly")
-j_string = r_string[-1].split("estimatesCharts")[0]
-
-json_part = j_string[2:-4]
-# json_part = json_part.replace("[PRO]", '0.0').replace("null", "None").replace("undefined", "None")
-json_part = json_part.replace("[PRO]", 'null') # Assuming [PRO] should become a number
-json_part = json_part.replace("undefined", "null").strip() # Convert 'undefined' to JSON 'null'
-json_part = re.sub(r'(?<!\d)(-\.)(\d+)', r'-0.\2', json_part) # Handles -.X (e.g., -.5 -> -0.5)
-json_part = re.sub(r'(?<!\d)(\.)(\d+)', r'0.\2', json_part)   # Handles .X (e.g., .5 -> 0.5)
-
-print(json_part)
-# json_part = '{"eps":[0.6,0.67,0.78, 0.900845,0.76,1.0660734,1.1671146,1.2944412,1.3194720000000002,1.3815594,0.0,0.0]}'
-
-print(json.loads(json_part))
+if __name__ == "__main__":
+    main()

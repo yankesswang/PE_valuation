@@ -6,34 +6,11 @@ from datetime import date
 
 
 # custom imports
-from forecast_scarper import StockAnalysisScraper
+from data_scarper import StockAnalysisScraper
 from pe_scraper import analyze_pe_ratios, parse_pe_ratios
+from names import STOCK_LIST
 
 class Valuation_Analyzer:
-    STOCK_LIST = {
-        "大科技": {"GOOG", "META", "AMZN", "NFLX", "AAPL", "MSFT", "TSLA", "ADBE"},
-        "航空郵輪": {"AAL", "LUV", "DAL", "UAL", "ALK", "BA", "CCL", "RCL"},
-        "銀行": {"BAC", "JPM", "GS", "C", "WFC", 'NU', 'SOFI'},
-        "傳統": {"DIS", "ISRG", "UNH", "ABBV", "CVS", 'TRV'},
-        "支付": {"MA", "V", "PYPL", "AXP"},
-        "零售": {"LULU", "COST", "PG", "KR", "JWN", "NKE", "DG", "FL", "EL", "PVH", "TPR"},
-        "食品": {"HIMS", "CELH","TSN", "MNST", "MCD", "SBUX", "KO", "PEP", "CMG", "YUM", 'DPZ', 'CAKE', 'JACK', 'PLAY', 'FIZZ', 'BLMN', 'DENN', 'DIN'},
-        "半導體": {'NVDA', "TSM", "AMD", "QCOM", "MU", "INTC", "ASML", "SWKS", "QRVO", "AVGO", "AMAT", 'MRVL', 'ARM', 'CLS', 'DELL', 'HPE'},
-        "原油": {"CVX", "VLO", "COP", "XOM", "OXY",},
-        "旅遊": {"BKNG", "EXPE", "MAR", "HLT", "ABNB", "H", "WYNN", "IHG", "LVS", "MGM"},
-        "工業": {'NEE', "DE", "HD", "APD", "CAT", "ETN", "HON", "WM", "GE", "MMM", "SUM", "X", 'ENPH', 'SEDG', "FSLR", "VRTV", "OKLO"},
-        'SaaS': {'SAP', 'CFLT', 'ACN', 'BSX', 'SHOP', 'CRM', 'DDOG', 'NOW', 'INTU', 'SQ', 'WDAY', 'SNOW', 'MDB', 'OKTA', 'ADSK', 'TTD', 'INOD'},
-        
-        '軟體':   {
-            "U", "RBLX",   "SNAP",   "PINS", "Z",   "TTD",    "APP",   "ETSY", "RDDT","DASH",   "TWLO",   "MTCH",   "EXPE",   "UBER", "SPLK",   
-            "WDAY",   "OKTA",   "MDB",    "PATH",   "HUBS",
-            "CYBR",   "NET",    "ZS",     "PANW",   "CRWD",     "DOCU",
-            "PLTR",    "ORCL",    
-            "CHKP",   "FTNT",   "AKAM",    "GEN",
-        }
-    }
-
-
     def __init__(self, current_year):
         # We only store the current_year in the constructor
         # The ticker will be handled in process_company(ticker)
@@ -51,7 +28,7 @@ class Valuation_Analyzer:
             dict: Calculated valuations and differences.
         """
         valuations = {}
-        print(stock_data)
+        # print(stock_data)
         # Derive suffixes
         current_year_suffix = str(self.current_year)[-2:]
         next_year_suffix = str(self.current_year + 1)[-2:]
@@ -132,6 +109,7 @@ class Valuation_Analyzer:
             dict or None: Dictionary containing all required data, or None if failed.
         """
         # Create a local scraper for this ticker
+        # print(f"\n正在處理公司 in process company：{ticker}")
         stock_analysis = StockAnalysisScraper(ticker, self.current_year)
         eps_forecast = stock_analysis.get_eps_forecast()
         print("eps_forecast: ",eps_forecast)
@@ -189,7 +167,7 @@ class Valuation_Analyzer:
         """
         industry_dataframes = {}
 
-        for industry, companies in self.STOCK_LIST.items():
+        for industry, companies in STOCK_LIST.items():
             print(f"\n正在處理產業：{industry}，包含 {len(companies)} 家公司。")
             all_companies_data = []
             

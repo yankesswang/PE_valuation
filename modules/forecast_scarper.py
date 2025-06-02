@@ -1,192 +1,118 @@
-import pandas as pd
-import re, json, json5
-import yfinance as yf
+from utils import fetch_url, parse_html, extract_percentage, clean_soup_value, clean_json_data
+import re
+import json
+import time
+import random
+from names import ratio_names, forecast_names
+from datetime import datetime
+from names import ratio_names, forecast_names, STOCK_LIST
 
-# custom imports
-from utils import fetch_url, parse_html, extract_percentage
-import ast
-
-class StockAnalysisScraper:
-    def __init__(self, ticker, current_year = 2025):
+class Forecast_Scraper():
+    def __init__(self):
         self.headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
-                      ' Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
+                          ' Chrome/91.0.4472.124 Safari/537.36'
         }
-        self.ticker = ticker
-        self.current_year = current_year
-
-    def get_eps_forecast(self):
-        """
-        Retrieves EPS forecasts for a given company from StockAnalysis.
-
-        Args:
-            company (str): The stock ticker symbol.
-
-        Returns:
-            dict or None: Dictionary containing EPS for 2024 and 2025, or None if failed.
-        """
-        url = f"https://stockanalysis.com/stocks/{self.ticker}/forecast/"
-        response = fetch_url(url, self.headers)
-        if not response:
-            return None
-
-        soup = parse_html(response.text)
-        table = soup.find('table', {'class': 'w-full whitespace-nowrap border border-gray-200 text-right text-sm dark:border-dark-700 sm:text-base'})
-        js_string = str(soup).split('const data')[-1]
-        # print(js_string)
-        
-        js_string = re.sub(r'<[^>]+>', '', js_string)
+        self.current_date = datetime.now().strftime('%Y-%m-%d')
     
-        # Find the array assignment pattern
-        # Look for patterns like "= [" or "data = [" 
-        array_match = re.search(r'=\s*(\[.*?\]);?\s*(?:Promise|$)', js_string, re.DOTALL)
-        
-        if not array_match:
-            # Try alternative pattern - look for standalone array
-            array_match = re.search(r'(\[.*?\]);?\s*(?:Promise|$)', js_string, re.DOTALL)
-        
-        if not array_match:
-            raise ValueError("No JavaScript array found in the string")
-        
-        array_str = array_match.group(1)
-       
-       
+    def fetch_stock_data(self, ticker, endpoint="forecast"):
+        """Fetch data from StockAnalysis for the given ticker and endpoint."""
+        url = f"https://stockanalysis.com/stocks/{ticker}/{endpoint}/"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        response = fetch_url(url, headers)
+        return (parse_html(response.text)) if response else None
 
-        if not table:
-            print(f"No forecast table found for {self.ticker}")
-            return None
+    def parse_annual_data(self, json_string):
+        """Parse annual financial data from JSON string."""
+        annual_part = json_string.split("annual")[1].split("quarterly")[0][2:-2]
+        annual_part = clean_json_data(annual_part)
+        return json.loads(annual_part)
 
-        headers_table = [header.get('title', header.text).strip() for header in table.find_all('th')]
-        rows = table.find_all('tr')[1:]  # Skip header row
-        data = []
+    def parse_quarterly_data(self, json_string):
+        """Parse quarterly financial data from JSON string."""
+        quarterly_part = json_string.split("quarterly")[-1].split("estimatesCharts")[0][2:-4]
+        # print(f"Raw quarterly part: {quarterly_part}")  # Debugging output
+        quarterly_part = clean_json_data(quarterly_part)
+        # print(f"Quarterly part: {quarterly_part}")  # Debugging output
+        return json.loads(quarterly_part)
 
-        for row in rows:
-            cells = row.find_all('td')
-            cell_data = [cell.text.strip() for cell in cells]
-            # Ensure data aligns with headers
-            cell_data += [''] * (len(headers_table) - len(cell_data))
-            data.append(cell_data[:len(headers_table)])
-
-        if not data:
-            print(f"No forecast data extracted for {self.ticker}")
-            return None
-    
-        df = pd.DataFrame(data, columns=headers_table)
-        # print(df)
-        # print('====================')
-        # print(df.columns)
-        # print('====================')
-        # print(self.current_year)
-
-        eps_growth = None
-        try:
-            eps_row = df[df['Fiscal Year'] == 'EPS']
-            print(eps_row)
-
-            def _get_eps_value(row, columns, year):
-                for col in [str(year), f"FY {year}"]:
-                    if col in columns and not row.empty:
-                        return float(row[col].values[0])
-                return 0.0
-
-            eps_current_year = _get_eps_value(eps_row, df.columns, self.current_year)
-            eps_next_year = _get_eps_value(eps_row, df.columns, self.current_year + 1)
-            eps_past_year = _get_eps_value(eps_row, df.columns, self.current_year - 1)
-            eps_past_year_5 = _get_eps_value(eps_row, df.columns, self.current_year - 5)
-            if eps_past_year_5 > 0 and eps_past_year > 0:
-                eps_growth = round(((eps_past_year / eps_past_year_5) ** (1 / 5) - 1) * 100, 2) if eps_past_year_5 else None
-        
-            # print('eps growth:', eps_growth)
-        except (KeyError, ValueError, IndexError) as e:
-            print(f"Error extracting EPS data for {self.ticker}: {e}")
-            eps_current_year, eps_next_year = 0.0, 0.0
-        current_year_suffix = str(self.current_year)[-2:]
-        next_year_suffix = str(self.current_year + 1)[-2:]
+    def create_stock_data_dict(self, annual_data, quarterly_data):
+        """Create a structured dictionary from parsed stock data."""
         return {
-            f"eps_{current_year_suffix}" : eps_current_year,
-            f"eps_{next_year_suffix}" : eps_next_year,
-            "past_eps_growth" : eps_growth
-        }
-
-    def get_growth_forecasts(self):
-        """
-        Retrieves 5-year growth forecasts from StockAnalysis.com.
-        
-        Args:
-            company (str): The stock ticker symbol
-            
-        Returns:
-            dict or None: Dictionary containing revenue and EPS growth forecasts
-        """
-        url = f"https://stockanalysis.com/stocks/{self.ticker}/statistics/"
-
-        try:
-            response = fetch_url(url,self.headers)
-            if not response:
-                return None
-                
-            soup = parse_html(response.text)
-            
-            # Find growth forecast values
-            forecasts = {
-                'revenue_growth_5y': None,
-                'eps_growth_5y': None
+                'annual': {
+                    "current_eps": annual_data['epsThis']['last'] if 'epsThis' in annual_data else None,
+                    "current_growth": annual_data['epsThis']['growth'] if 'epsThis' in annual_data else None,
+                    "next_year_eps": annual_data['epsNext']['last'] if 'epsNext' in annual_data else None,
+                    "next_year_growth": annual_data['epsNext']['growth'] if 'epsNext' in annual_data else None,
+                    "current_revenue": annual_data['revenueThis']['last'] if 'revenueThis' in annual_data else None,
+                    "current_revenue_growth": annual_data['revenueThis']['growth'] if 'revenueThis' in annual_data else None,
+                    "next_year_revenue": annual_data['revenueNext']['last'] if 'revenueNext' in annual_data else None,
+                    "next_year_revenue_growth": annual_data['revenueNext']['growth'] if 'revenueNext' in annual_data else None,
+                },
+                'quarterly': {
+                    "eps": quarterly_data['eps'] if 'eps' in quarterly_data else None,
+                    "revenue": quarterly_data['revenue'] if 'revenue' in quarterly_data else None,
+                    "revenue_growth": quarterly_data['revenueGrowth'] if 'revenue_growth' in quarterly_data else None,
+                    "eps_growth": quarterly_data['epsGrowth'] if 'epsGrowth' in quarterly_data else None,
+                    # "year": quarterly_data['fiscalYear'] if 'fiscalYear' in quarterly_data else None,
+                    # "quarter": quarterly_data['fiscalQuarter'] if 'fiscalQuarter' in quarterly_data else None,
+                }
             }
-            print(soup.prettify())
-            # Find elements containing the forecasts
-            for row in soup.find_all('tr'):
-                cells = row.find_all('td')
-                if not cells:
-                    continue
-                    
-                label_cell = cells[0].get_text(strip=True)
-                if 'Revenue Growth Forecast' in label_cell and '5Y' in label_cell:
-                    forecasts['revenue_growth_5y'] = extract_percentage(cells[-1].get_text(strip=True))
-                elif 'EPS Growth Forecast' in label_cell and '5Y' in label_cell:
-                    forecasts['eps_growth_5y'] = extract_percentage(cells[-1].get_text(strip=True))
-            
-            # Verify we found both metrics
-            if forecasts['revenue_growth_5y'] is None and forecasts['eps_growth_5y'] is None:
-                print(f"No growth forecasts found for {self.ticker}")
-    
-            return forecasts
-            
-        except Exception as e:
-            print(f"Error extracting growth forecasts: {e}")
-            return None
         
 
-    def get_market_cap_and_price(self):
+    def get_company_metrics(self):
         """
-        Retrieves the market capitalization and current price for a given stock ticker.
-
+        Get financial metrics for a specific company ticker.
+        
         Args:
             ticker (str): The stock ticker symbol.
-
-        Returns:
-            tuple: A tuple containing the market capitalization and current price, or None if failed.
-        """
-        try:
-            stock = yf.Ticker(self.ticker)
-            print(stock.info)
-            market_cap = round(int(stock.info['marketCap'])/1000000000, 2) if 'marketCap' in stock.info else "NA"
-            current_price = stock.info['currentPrice'] if 'currentPrice' in stock.info else "NA"
-            beta_value = stock.info['beta'] if 'beta' in stock.info else "NA"
         
-            return {
-                'ticker': self.ticker,
-                '市值': str(market_cap)+"B",
-                '股價': current_price,
-                'Beta': (beta_value)
-            }
-        except Exception as e:
-            print(f"Error retrieving data for {self.ticker}: {e}")
-            return None
+        Returns:
+            dict: A dictionary containing the company's financial metrics.
+        """
+        all_companies_metrics = {}
+        for industry, companies in STOCK_LIST.items():
+            for company in companies:
+                print(f"Fetching data for {company}...")
+                data = self.fetch_stock_data(company, endpoint="forecast")
+                if not data:
+                    print(f"Failed to fetch data for {company}")
+                    continue
+                json_string = clean_soup_value(str(data))
+                annual_data = self.parse_annual_data(json_string)
+                quarterly_data = self.parse_quarterly_data(json_string)
+                all_companies_metrics[company] = self.create_stock_data_dict(annual_data, quarterly_data)
+                # 等待，避免被封鎖
+                time.sleep(random.uniform(10, 30))
+        return all_companies_metrics
+
+# def main():
+#     ratio_scraper = Forecast_Scraper()
+#     stock_list_forecasts = ratio_scraper.get_company_metrics()
+#     with open(f'stock_list_forecasts_{ratio_scraper.current_date}.json', 'w') as f:
+#         json.dump(stock_list_forecasts, f, indent=2)
+#     # ticker = "NVDA"  # Example ticker symbol
+    
+    # # For actual web fetching:
+    # # soup = fetch_stock_data(ticker)
+    # # if soup:
+    # #     with open("../data/soup.txt", "w") as f:
+    # #         f.write(str(soup))
+    
+    # # Reading from saved file for testing:
+    # with open("../data/soup.txt", "r") as f:
+    #     soup_content = f.read()
+    
+    # json_string = clean_soup_value(soup_content)
+    # annual_data = parse_annual_data(json_string)
+    # quarterly_data = parse_quarterly_data(json_string)
+    
+    # result = create_stock_data_dict(ticker, annual_data, quarterly_data)
+    # print(result)
+
+# if __name__ == "__main__":
+#     main()
 
 
-if __name__ == '__main__':
-    scraper = StockAnalysisScraper('AAPL', 2025)
-
-    print(scraper.get_growth_forecasts())
-    # print(scraper.get_eps_forecast())
-    # print(scraper.get_market_cap_and_price())
