@@ -36,11 +36,11 @@ class StockAnalysisScraper:
         annual_data = (self.forecast_data[self.ticker]["annual"])
         quarterly_growth_data = (self.forecast_data[self.ticker]["quarterly"].get("eps_growth", None))
        
-        eps_current_year = annual_data.get("current_eps", None)
-        eps_next_year = annual_data.get("next_year_eps", None)
+        eps_current_year = round(annual_data.get("current_eps", None), 2)
+        eps_next_year = round(annual_data.get("next_year_eps", None), 2)
         
         valid_values = [x for x in quarterly_growth_data[:min(5, len(quarterly_growth_data))] if x is not None] if quarterly_growth_data else []
-        eps_growth = (sum(valid_values) / len(valid_values)) if valid_values else None
+        eps_growth = round(sum(valid_values) / len(valid_values), 2) if valid_values else None
         return {
             f"eps_{current_year_suffix}" : eps_current_year,
             f"eps_{next_year_suffix}" : eps_next_year,
@@ -134,7 +134,8 @@ class StockAnalysisScraper:
        
 
         market_cap = round(self.ratio_data[self.ticker]["marketcap"]/1000000000.0, 2) 
-        stock_price = self.get_price(self.ticker)
+        # stock_price = self.get_price(self.ticker)
+        stock_price = yf.Ticker(self.ticker).info["regularMarketPrice"]
         beta_value = self.ratio_data[self.ticker]["beta"]
     
         return {
@@ -149,10 +150,7 @@ class StockAnalysisScraper:
 
 
 if __name__ == '__main__':
-    scraper = StockAnalysisScraper('ALK', 2025)
+    scraper = StockAnalysisScraper('AMZN', 2025)
 
     print(scraper.get_growth_forecasts())
-  
- 
-
     print(scraper.get_market_cap_and_price())

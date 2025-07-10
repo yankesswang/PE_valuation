@@ -75,7 +75,7 @@ STOCK_LIST = {
         "半導體": {'NVDA', "TSM", "AMD", "QCOM", "MU", "INTC", "ASML", "SWKS", "QRVO", "AVGO", "AMAT", 'MRVL', 'ARM', 'CLS', 'DELL', 'HPE'},
         "原油": {"CVX", "VLO", "COP", "XOM", "OXY",},
         "旅遊": {"BKNG", "EXPE", "MAR", "HLT", "ABNB", "H", "WYNN", "IHG", "LVS", "MGM"},
-        "工業": {'NEE', "DE", "HD", "APD", "CAT", "ETN", "HON", "WM", "GE", "MMM", "SUM", "X", 'ENPH', 'SEDG', "FSLR", "VRT", "OKLO"},
+        "工業": {'NEE', "DE", "HD", "APD", "CAT", "ETN", "HON", "WM", "GE", "MMM", "SUM", "X", 'ENPH', 'SEDG', "FSLR", "OKLO"},
         'SaaS': {'SAP', 'CFLT', 'ACN', 'BSX', 'SHOP', 'CRM', 'DDOG', 'NOW', 'INTU', 'SQ', 'WDAY', 'SNOW', 'MDB', 'OKTA', 'ADSK', 'TTD', 'INOD'},
         
         '軟體':   {
@@ -86,3 +86,156 @@ STOCK_LIST = {
             "CHKP",   "FTNT",   "AKAM",    "GEN",
         }
     }
+
+PE_TICKER_TO_COMPANY = {
+    # 大科技
+    "goog": "alphabet",
+    "meta": "meta-platforms",
+    "amzn": "amazon",
+    "nflx": "netflix",
+    "aapl": "apple",
+    "msft": "microsoft",
+    "tsla": "tesla",
+    "adbe": "adobe",
+
+    # 航空郵輪
+    "aal": "american-airlines",
+    "luv": "southwest-airlines",
+    "dal": "delta-air-lines",
+    "ual": "united-airlines",
+    "alk": "alaska-air-group",
+    "ba": "boeing",
+    "eadsy": "airbus",
+    "ccl": "carnival",
+    "rcl": "royal-caribbean",
+
+    # 銀行
+    "bac": "bank-of-america",
+    "jpm": "jpmorgan-chase",
+    "gs": "goldman-sachs",
+    "c": "citigroup",
+    "wfc": "wells-fargo",
+    "blk": "blackrock",
+    "nu": "nu-holdings",
+    "sofi": "sofi",
+
+    # 傳統
+    "dis": "walt-disney",
+    "isrg": "intuitive-surgical",
+    "unh": "unitedhealth-group",
+    "abbv": "abbvie",
+    "cvs": "cvs-health",
+    "trv": "the-travelers-companies",
+
+    # 支付
+    "ma": "mastercard",
+    "v": "visa",
+    "pypl": "paypal",
+    "axp": "american-express",
+
+    # 零售
+    "lulu": "lululemon-athletica",
+    "gps": "gap",
+    "cost": "costco-wholesale",
+    "pg": "procter-&-gamble",
+    "kr": "kroger",
+    "jwn": "nordstrom",
+    "nke": "nike",
+    "dg": "dollar-general",
+    "fl": "foot-locker",
+    "lvmhf": "lvmh",
+    "el": "estée-lauder",
+    "pvh": "pvh-corp.",
+    "tpr": "tapestry",
+
+    # 食品
+    "tsn": "tyson-foods",
+    "mcd": "mcdonald's",
+    "sbux": "starbucks",
+    "ko": "coca-cola",
+    "pep": "pepsi-co",
+    "cmg": "chipotle-mexican-grill",
+    "yum": "yum!-brands",
+    "dpz": "domino's-pizza",
+    "cake": "the-cheesecake-factory",
+    "jack": "jack-in-the-box",
+    "play": "dave-&-busters",
+    "fizz": "national-beverage",
+    "blmn": "bloomin'-brands",
+    "denn": "denny's",
+    "din": "dine-brands-global",
+
+    # 半導體
+    "nvda": "nvidia",
+    "tsm": "taiwan-semiconductor-(tsmc)",
+    "amd": "advanced-micro-devices",
+    "qcom": "qualcomm",
+    "mu": "micron-technology",
+    "intc": "intel",
+    "asml": "asml-holding",
+    "swks": "skyworks-solutions",
+    "qrvo": "qorvo",
+    "avgo": "broadcom",
+    "amat": "applied-materials",
+    "mrvl": "marvell-technology",
+    "arm": "arm-holdings",
+    "cls": "celestica",
+    "dell": "dell-technologies",
+    "hpe": "hewlett-packard-enterprise",
+
+    # 原油
+    "cvx": "chevron",
+    "vlo": "valero-energy",
+    "cop": "conocophillips",
+    "xom": "exxon-mobil",
+    "oxy": "occidental-petroleum",
+    "cpe": "callon-petroleum",
+    "enb": "enbridge",
+
+    # 旅遊
+    "bkng": "booking-holdings",
+    "expe": "expedia-group",
+    "mar": "marriott-international",
+    "hlt": "hilton-worldwide",
+    "abnb": "airbnb",
+    "h": "hyatt-hotels",
+    "wynn": "wynn-resorts",
+    "ihg": "intercontinental-hotels",
+    "lvs": "las-vegas-sands",
+    "mgm": "mgm-resorts",
+
+    # 工業
+    "nee": "nextera-energy",
+    "de": "deere-&-company",
+    "hd": "home-depot",
+    "apd": "air-products-&-chemicals",
+    "cat": "caterpillar",
+    "etn": "eaton-corporation",
+    "hon": "honeywell",
+    "wm": "waste-management",
+    "ge": "general-electric",
+    "mmm": "3m-company",
+    "sum": "summit-materials",
+    "x": "u.s.-steel",
+    "enph": "enphase-energy",
+    "sedg": "solaredge",
+    "fslr": "first-solar",
+
+    # SaaS
+    "sap": "sap-se",           # Ticker is sometimes just 'sap'
+    "cflt": "confluent",
+    "acn": "accenture",
+    "bsx": "boston-scientific",
+    "shop": "shopify",
+    "crm": "salesforce",
+    "ddog": "datadog",
+    "now": "servicenow",
+    "intu": "intuit",
+    "sq": "block-(square)",
+    "wdays": "workday",
+    "snow": "snowflake",
+    "mdb": "mongodb",
+    "okta": "okta",
+    "adsk": "autodesk",
+    "ttd": "the-trade-desk",
+}

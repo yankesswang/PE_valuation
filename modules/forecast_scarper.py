@@ -88,31 +88,24 @@ class Forecast_Scraper():
                 time.sleep(random.uniform(10, 30))
         return all_companies_metrics
 
-# def main():
-#     ratio_scraper = Forecast_Scraper()
-#     stock_list_forecasts = ratio_scraper.get_company_metrics()
-#     with open(f'stock_list_forecasts_{ratio_scraper.current_date}.json', 'w') as f:
-#         json.dump(stock_list_forecasts, f, indent=2)
-#     # ticker = "NVDA"  # Example ticker symbol
+def main():
+    ratio_scraper = Forecast_Scraper()
+    stock_list_forecasts = ratio_scraper.get_company_metrics()
+    with open(f'stock_list_forecasts_{ratio_scraper.current_date}.json', 'w') as f:
+        json.dump(stock_list_forecasts, f, indent=2)
+    # ticker = "NVDA"  # Example ticker symbol
+    # data = ratio_scraper.fetch_stock_data(ticker, endpoint="metrics")
+    # print(f"Data fetched for {ticker}: {data}")
+    # with open('soup.txt', 'w') as f:
+    #     f.write(str(data))
+    # json_string = clean_soup_value(str(data))
+    # # annual_data = ratio_scraper.parse_annual_data(json_string)
+    # quarterly_data = ratio_scraper.parse_quarterly_data(json_string)
+    # # print("Annual Data:", annual_data)
+    # print("Quarterly Data:", quarterly_data)
     
-    # # For actual web fetching:
-    # # soup = fetch_stock_data(ticker)
-    # # if soup:
-    # #     with open("../data/soup.txt", "w") as f:
-    # #         f.write(str(soup))
     
-    # # Reading from saved file for testing:
-    # with open("../data/soup.txt", "r") as f:
-    #     soup_content = f.read()
-    
-    # json_string = clean_soup_value(soup_content)
-    # annual_data = parse_annual_data(json_string)
-    # quarterly_data = parse_quarterly_data(json_string)
-    
-    # result = create_stock_data_dict(ticker, annual_data, quarterly_data)
-    # print(result)
-
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 

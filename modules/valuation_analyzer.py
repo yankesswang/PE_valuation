@@ -3,11 +3,10 @@ import random
 from tqdm import tqdm
 import pandas as pd
 from datetime import date
-
+import json
 
 # custom imports
 from data_scarper import StockAnalysisScraper
-from pe_scraper import analyze_pe_ratios, parse_pe_ratios
 from names import STOCK_LIST
 
 class Valuation_Analyzer:
@@ -117,8 +116,13 @@ class Valuation_Analyzer:
         growth_data = stock_analysis.get_growth_forecasts()
         
         # PE median (5-year)
-        pe_median = analyze_pe_ratios(parse_pe_ratios(ticker))
-
+        with open("../data/stock_list_PE_2025-06-29.json", 'r') as f:
+            pe_data = json.load(f)
+        if ticker not in pe_data:
+            print(f"Ticker {ticker} not found in PE data.")
+            return None
+        pe_median = pe_data.get(ticker, 0.0)
+        
         # Market cap, price, etc.
         stock_data = stock_analysis.get_market_cap_and_price()
         if not stock_data:
@@ -217,14 +221,12 @@ class Valuation_Analyzer:
 
 
 if __name__ == "__main__":
-    # Instantiate the analyzer only once, without specifying a ticker
-    # analyzer = Valuation_Analyzer(2025)
+    analyzer = Valuation_Analyzer(2025)
     # res = analyzer.process_company('ADBE')
     # print(res)
-    analyzer = Valuation_Analyzer(2025)
-    
+
     # Gather the data for all industries/companies
     df_dict = analyzer.aggregate_company_data()
     
     # Save results to Excel
-    analyzer.save_to_excel(df_dict, f'../valuation/stock_data_software_{date.today()}.xlsx')
+    analyzer.save_to_excel(df_dict, f'../valuation/stock_data_{date.today()}.xlsx')
