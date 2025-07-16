@@ -113,5 +113,5 @@ if __name__ == "__main__":
     ratio_scraper = Ratio_Scraper()
     # print(ratio_scraper.extract_ticker_metrics("NVDA"))  # Example ticker symbol, replace with actual ticker
     all_companies_metrics = (ratio_scraper.get_company_metrics())  # Get metrics for all companies in STOCK_LIST
-    with open(f'stock_list_metrics_{ratio_scraper.current_date}.json', 'w') as f:
+    with open(f'../data/ratio/stock_list_metrics_{ratio_scraper.current_date}.json', 'w') as f:
         json.dump(all_companies_metrics, f, indent=2)

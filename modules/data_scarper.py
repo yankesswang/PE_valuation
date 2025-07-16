@@ -1,10 +1,11 @@
 import pandas as pd
-import re, json, json5
+import re, json
 import yfinance as yf
 
 # custom imports
 from utils import fetch_url, parse_html, extract_percentage
 import ast
+from datetime import datetime
 
 class StockAnalysisScraper:
     def __init__(self, ticker, current_year = 2025):
@@ -14,12 +15,15 @@ class StockAnalysisScraper:
         }
         self.ticker = ticker
         self.current_year = current_year
-
-        with open("../data/stock_list_metrics_2025-05-30.json", "r") as f:
+        date = datetime.now().strftime('%Y-%m-%d')
+        with open(f"../data/ratio/stock_list_ratio_{date}.json", "r") as f:
             self.ratio_data = json.load(f)
 
-        with open("../data/stock_list_forecasts_2025-06-01.json", "r") as f:
+        with open(f"../data/forecast/stock_list_forecasts_{date}.json", "r") as f:
             self.forecast_data = json.load(f)
+
+        with open(f"../data/pe/stock_list_PE_{date}.json", "r") as f:
+            self.pe_data = json.load(f)
             
     def get_eps_forecast(self):
         """

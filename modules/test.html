@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIC 推論平台系統架構圖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .diagram {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            background: #fafafa;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        
+        .box {
+            position: absolute;
+            background: white;
+            border: 2px solid;
+            border-radius: 6px;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* 左側：邊緣設備 */
+        .edge { border-color: #2196F3; color: #2196F3; }
+        .edge-atic { 
+            border-color: #2196F3; 
+            color: #2196F3; 
+            background: linear-gradient(135deg, #fff 70%, #e3f2fd 70%);
+            position: relative;
+        }
+        .edge-atic::after {
+            content: '⚡';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 10px;
+            color: #FF9800;
+        }
+        .robot { top: 80px; left: 50px; width: 80px; }
+        .board { top: 140px; left: 50px; width: 80px; }
+        .display { top: 200px; left: 50px; width: 80px; }
+        .laptop { top: 260px; left: 50px; width: 80px; }
+        
+        /* 中間：ATIC 核心 */
+        .core { border-color: #4CAF50; color: #4CAF50; }
+        .api { top: 120px; left: 250px; width: 80px; }
+        .balancer { top: 180px; left: 250px; width: 80px; }
+        .manager { top: 240px; left: 250px; width: 80px; }
+        
+        /* 右側：Spark 集群 */
+        .spark { border-color: #9C27B0; color: #9C27B0; }
+        .master { top: 120px; left: 450px; width: 80px; }
+        .worker1 { top: 180px; left: 400px; width: 70px; }
+        .worker2 { top: 180px; left: 480px; width: 70px; }
+        .gpu1 { top: 240px; left: 400px; width: 70px; }
+        .gpu2 { top: 240px; left: 480px; width: 70px; }
+        
+        /* 底部：支援服務 */
+        .support { border-color: #FF9800; color: #FF9800; }
+        .storage { top: 400px; left: 150px; width: 80px; }
+        .cache { top: 400px; left: 250px; width: 80px; }
+        .log { top: 400px; left: 350px; width: 80px; }
+        .monitor { top: 400px; left: 450px; width: 80px; }
+        
+        /* 箭頭 */
+        .arrow {
+            position: absolute;
+            height: 2px;
+            background: #666;
+        }
+        
+        .arrow::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: -3px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid #666;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+        
+        /* 水平箭頭 */
+        .arrow-h1 { top: 150px; left: 140px; width: 100px; }
+        .arrow-h2 { top: 210px; left: 140px; width: 100px; }
+        .arrow-h3 { top: 270px; left: 140px; width: 100px; }
+        .arrow-h4 { top: 210px; left: 340px; width: 100px; }
+        
+        /* 垂直箭頭 */
+        .arrow-v {
+            width: 2px;
+            height: 50px;
+            left: 289px;
+        }
+        .arrow-v1 { top: 150px; }
+        .arrow-v2 { top: 210px; }
+        
+        .arrow-v::after {
+            right: -3px;
+            top: 44px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid #666;
+            border-bottom: none;
+        }
+        
+        /* 標籤 */
+        .label {
+            position: absolute;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .protocol1 { top: 140px; left: 160px; }
+        .protocol2 { top: 200px; left: 360px; }
+        
+        /* 區域標題 */
+        .zone-title {
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            background: rgba(255,255,255,0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        
+        .zone1 { top: 50px; left: 60px; color: #2196F3; }
+        .zone2 { top: 50px; left: 260px; color: #4CAF50; }
+        .zone3 { top: 50px; left: 460px; color: #9C27B0; }
+        .zone4 { top: 370px; left: 290px; color: #FF9800; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">ATIC 推論平台系統架構圖</div>
+        
+        <div class="diagram">
+            <!-- 區域標題 -->
+            <div class="zone-title zone1">邊緣設備</div>
+            <div class="zone-title zone2">ATIC 核心</div>
+            <div class="zone-title zone3">Spark 集群</div>
+            <div class="zone-title zone4">支援服務</div>
+            
+            <!-- 邊緣設備 -->
+            <div class="box edge robot">🤖<br/>機器人</div>
+            <div class="box edge-atic board">🔧<br/>主板<br/><small>輕量ATIC</small></div>
+            <div class="box edge display">🖥️<br/>顯示器</div>
+            <div class="box edge-atic laptop">💻<br/>筆電<br/><small>輕量ATIC</small></div>
+            
+            <!-- ATIC 核心 -->
+            <div class="box core api">API<br/>Gateway</div>
+            <div class="box core balancer">Load<br/>Balancer</div>
+            <div class="box core manager">Inference<br/>Manager</div>
+            
+            <!-- Spark 集群 -->
+            <div class="box spark master">Spark<br/>Master</div>
+            <div class="box spark worker1">Worker<br/>Node 1</div>
+            <div class="box spark worker2">Worker<br/>Node 2</div>
+            <div class="box spark gpu1">GPU<br/>Pool 1</div>
+            <div class="box spark gpu2">GPU<br/>Pool 2</div>
+            
+            <!-- 支援服務 -->
+            <div class="box support storage">模型<br/>儲存</div>
+            <div class="box support cache">快取<br/>系統</div>
+            <div class="box support log">日誌<br/>系統</div>
+            <div class="box support monitor">監控<br/>系統</div>
+            
+            <!-- 箭頭 -->
+            <div class="arrow arrow-h1"></div>
+            <div class="arrow arrow-h2"></div>
+            <div class="arrow arrow-h3"></div>
+            <div class="arrow arrow-h4"></div>
+            <div class="arrow arrow-v arrow-v1"></div>
+            <div class="arrow arrow-v arrow-v2"></div>
+            
+            <!-- 邊緣設備間的通信 -->
+            <div class="arrow" style="top: 120px; left: 60px; width: 40px; transform: rotate(45deg);"></div>
+            <div class="arrow" style="top: 240px; left: 60px; width: 40px; transform: rotate(-45deg);"></div>
+            
+            <!-- 協議標籤 -->
+            <div class="label protocol1">HTTP/gRPC</div>
+            <div class="label protocol2">Spark API</div>
+            <div class="label" style="top: 100px; left: 80px; font-size: 9px;">邊緣通信</div>
+        </div>
+        
+        <!-- 說明 -->
+        <div style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+            <div style="background: #f0f8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #2196F3;">
+                <h4 style="margin: 0 0 10px 0; color: #2196F3;">邊緣設備架構</h4>
+                <ul style="margin: 0; font-size: 13px;">
+                    <li><strong>機器人、顯示器</strong>：純客戶端</li>
+                    <li><strong>主板、筆電</strong>：雙重角色
+                        <ul style="margin: 5px 0 0 15px; font-size: 12px;">
+                            <li>✓ 接收ATIC服務</li>
+                            <li>✓ 提供輕量ATIC服務</li>
+                        </ul>
+                    </li>
+                    <li>邊緣設備間可直接通信</li>
+                </ul>
+            </div>
+            <div style="background: #f0fff0; padding: 15px; border-radius: 8px; border-left: 4px solid #4CAF50;">
+                <h4 style="margin: 0 0 10px 0; color: #4CAF50;">數據流程</h4>
+                <ol style="margin: 0; font-size: 13px;">
+                    <li>邊緣設備發送推論請求</li>
+                    <li>主板/筆電可就近處理輕量任務</li>
+                    <li>複雜任務轉發到中央ATIC</li>
+                    <li>API Gateway 接收並路由</li>
+                    <li>Spark 集群執行重度計算</li>
+                    <li>結果返回給邊緣設備</li>
+                </ol>
+            </div>
+            <div style="background: #fff8f0; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9800;">
+                <h4 style="margin: 0 0 10px 0; color: #FF9800;">系統優勢</h4>
+                <ul style="margin: 0; font-size: 13px;">
+                    <li>📍 邊緣就近計算</li>
+                    <li>⚡ 降低延遲</li>
+                    <li>📊 減輕中央負載</li>
+                    <li>🔄 彈性負載分配</li>
+                    <li>🌐 分散式架構</li>
+                    <li>📈 高可擴展性</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

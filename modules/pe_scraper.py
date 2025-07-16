@@ -158,5 +158,5 @@ if __name__ == "__main__":
     # print(f"Median PE Ratio for {ticker}:", pe_median)
 
     pe_data = pe_scraper.get_company_metrics()
-    with open(f'../data/stock_list_PE_{pe_scraper.current_date}.json', 'w') as f:
+    with open(f'../data/pe/stock_list_PE_{pe_scraper.current_date}.json', 'w') as f:
         json.dump(pe_data, f, indent=2)

@@ -115,9 +115,8 @@ class Valuation_Analyzer:
         # Growth data
         growth_data = stock_analysis.get_growth_forecasts()
         
-        # PE median (5-year)
-        with open("../data/stock_list_PE_2025-06-29.json", 'r') as f:
-            pe_data = json.load(f)
+        pe_data = stock_analysis.pe_data
+        
         if ticker not in pe_data:
             print(f"Ticker {ticker} not found in PE data.")
             return None

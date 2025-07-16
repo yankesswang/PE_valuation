@@ -91,7 +91,7 @@ class Forecast_Scraper():
 def main():
     ratio_scraper = Forecast_Scraper()
     stock_list_forecasts = ratio_scraper.get_company_metrics()
-    with open(f'stock_list_forecasts_{ratio_scraper.current_date}.json', 'w') as f:
+    with open(f'../data/forecast/stock_list_forecasts_{ratio_scraper.current_date}.json', 'w') as f:
         json.dump(stock_list_forecasts, f, indent=2)
     # ticker = "NVDA"  # Example ticker symbol
     # data = ratio_scraper.fetch_stock_data(ticker, endpoint="metrics")
