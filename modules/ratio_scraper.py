@@ -1,18 +1,10 @@
-
-from utils import fetch_url, parse_html, extract_percentage
-import re, json, time, random   
-from names import ratio_names, forecast_names
-
-from utils import fetch_url, parse_html, extract_percentage, clean_soup_value
-import re, json
-from names import ratio_names, forecast_names, STOCK_LIST
+from utils import fetch_url, parse_html
+import re, json, time, random
 from datetime import datetime
+from names import STOCK_LIST
+import yfinance as yf
 
-# Get the current date and format it as YYYY-MM-DD
-# current_date = datetime.now().strftime('%Y-%m-%d')
-# print(f"Current date: {current_date}")
-
-class Ratio_Scraper():
+class Ratio_Scraper_Fixed():
     def __init__(self):
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
@@ -20,98 +12,198 @@ class Ratio_Scraper():
         }
         self.current_date = datetime.now().strftime('%Y-%m-%d')
 
-    def fetch_data(self, url):
-        """Fetch data from the specified URL."""
-        response = fetch_url(url, self.headers)
-        if not response:
-            print(f"Failed to fetch data from {url}")
+    def parse_value(self, value_str):
+        """Parse a value string from the website into a numeric value"""
+        if not value_str or value_str == 'n/a' or value_str == '-':
             return None
-        soup = str(parse_html(response.text))
-        data = clean_soup_value(soup)
-        return data
-    
-    def extract_all_metrics(self, ticker, data, industry=None):
-        """
-        Extract all financial metrics from the provided data string.
-        """
-        # Dictionary to store all metrics
-        all_metrics = {"industry": industry}
-        
-        # Extract values for each ratio name
-        for ratio_name in ratio_names:
-            pattern = rf'"id":"{ratio_name}","title":"[^"]+","value":"([^"]+)"'
-            match = re.search(pattern, data)
-            if match:
-                # Remove currency symbols and convert to appropriate type if possible
-                value = match.group(1)
-               
-                # if '$' in value:
-                value = value.replace('$', '').replace(',', '')
-                if value == "n/a":
-                    all_metrics[ratio_name] = None
-                elif value.endswith('B'):
-                    # Convert billion notation to numeric
-                    all_metrics[ratio_name] = float(value.replace('B', '')) * 1e9
-                elif value.endswith('M'):
-                    # Convert million notation to numeric
-                    all_metrics[ratio_name] = float(value.replace('M', '')) * 1e6
-                elif value.endswith('T'):
-                    # Convert trillion notation to numeric
-                    all_metrics[ratio_name] = float(value.replace('T', '')) * 1e12
-                elif value.endswith('%'):
-                    # Convert percentage to decimal
-                    all_metrics[ratio_name] = float(value.replace('%', '')) / 100
-                elif value.startswith('$'):
-                    # Remove dollar sign
-                    all_metrics[ratio_name] = value.replace('$', '')
-                else:
-                    # Keep as is - could be date or other string value
-                    all_metrics[ratio_name] = value
-            else:
-                all_metrics[ratio_name] = None
-        
-        return all_metrics
-    
+
+        # Remove currency symbols and commas
+        value_str = value_str.replace('$', '').replace(',', '').strip()
+
+        try:
+            # Handle percentage
+            if '%' in value_str:
+                return float(value_str.replace('%', ''))
+
+            # Handle billions/millions/trillions
+            multipliers = {'T': 1e12, 'B': 1e9, 'M': 1e6, 'K': 1e3}
+            for suffix, multiplier in multipliers.items():
+                if value_str.endswith(suffix):
+                    return float(value_str[:-1]) * multiplier
+
+            # Try direct conversion
+            return float(value_str)
+        except (ValueError, AttributeError):
+            return value_str  # Return as string if can't convert
+
     def extract_ticker_metrics(self, ticker, industry=None):
         """
-        Extract financial metrics for a given ticker symbol.
-        
-        Args:
-            ticker (str): The stock ticker symbol.
-        
-        Returns:
-            dict: A dictionary containing the extracted financial metrics.
+        Extract financial metrics for a given ticker symbol by parsing HTML tables.
         """
         url = f"https://stockanalysis.com/stocks/{ticker}/statistics/"
-        data = self.fetch_data(url)
-        print("Data fetched successfully for:", ticker)
-        # If no data is returned, log the failure and return None
-        if not data:
+        response = fetch_url(url, self.headers)
+
+        if not response:
             print(f"Failed to fetch data for {ticker}")
             return None
-        # Extract all metrics using the provided ratio names
-        return self.extract_all_metrics(ticker, data, industry)
-    
+
+        soup = parse_html(response.text)
+        metrics = {"industry": industry}
+
+        # Find all table rows
+        rows = soup.find_all('tr')
+
+        for row in rows:
+            cells = row.find_all('td')
+            if len(cells) < 2:
+                continue
+
+            # Get the label (first cell)
+            label_cell = cells[0]
+            label = label_cell.get_text(strip=True)
+
+            # Get the value (last cell, usually has title attribute with full value)
+            value_cell = cells[-1]
+            value = value_cell.get('title') or value_cell.get_text(strip=True)
+
+            # Parse the value
+            parsed_value = self.parse_value(value)
+
+            # Map common labels to metric keys (based on your original ratio_names)
+            label_mapping = {
+                'Market Cap': 'marketcap',
+                'Enterprise Value': 'enterpriseValue',
+                'Earnings Date': 'earningsdate',
+                'Ex-Dividend Date': 'exdivdate',
+                'Current Share Class': 'sharesOutClass',
+                'Shares Outstanding': 'sharesout',
+                'Shares Change (YoY)': 'sharesgrowthyoy',
+                'Shares Change (QoQ)': 'sharesgrowthqoq',
+                'Shares Held by Insiders': 'sharesInsiders',
+                'Shares Held by Institutions': 'sharesInstitutions',
+                'Float': 'float',
+                'PE Ratio': 'pe',
+                'Forward PE': 'peForward',
+                'PS Ratio': 'ps',
+                'Forward PS': 'psForward',
+                'PB Ratio': 'pb',
+                'Price to Tangible Book': 'ptbvRatio',
+                'Price to Free Cash Flow': 'pfcf',
+                'Price to Operating Cash Flow': 'pocf',
+                'PEG Ratio': 'pegRatio',
+                'EV / Earnings': 'evEarnings',
+                'EV / Sales': 'evSales',
+                'EV / EBITDA': 'evEbitda',
+                'EV / EBIT': 'evEbit',
+                'EV / FCF': 'evFcf',
+                'Current Ratio': 'currentRatio',
+                'Quick Ratio': 'quickRatio',
+                'Debt / Equity': 'debtEquity',
+                'Debt / EBITDA': 'debtEbitda',
+                'Debt / FCF': 'debtFcf',
+                'Interest Coverage': 'interestCoverage',
+                'ROE': 'roe',
+                'ROA': 'roa',
+                'ROIC': 'roic',
+                'ROCE': 'roce',
+                'Revenue per Employee': 'revPerEmployee',
+                'Profit per Employee': 'profitPerEmployee',
+                'Employees': 'employees',
+                'Asset Turnover': 'assetturnover',
+                'Inventory Turnover': 'inventoryturnover',
+                'Tax Rate': 'taxrate',
+                'Beta': 'beta',
+                '52-Week Change': 'ch1y',
+                '50-Day MA': 'sma50',
+                '200-Day MA': 'sma200',
+                'RSI': 'rsi',
+                'Average Volume': 'averageVolume',
+                'Short Interest': 'shortInterest',
+                'Short Interest (Prior Month)': 'shortPriorMonth',
+                'Short % of Shares Out': 'shortShares',
+                'Short % of Float': 'shortFloat',
+                'Short Ratio': 'shortRatio',
+                'Revenue': 'revenue',
+                'Gross Profit': 'gp',
+                'Operating Income': 'opinc',
+                'Pretax Income': 'pretax',
+                'Net Income': 'netinc',
+                'EBITDA': 'ebitda',
+                'EBIT': 'ebit',
+                'EPS (Diluted)': 'eps',
+                'Total Cash': 'totalcash',
+                'Total Debt': 'debt',
+                'Net Cash / Debt': 'netcash',
+                'Book Value per Share': 'bvps',
+                'Working Capital': 'workingcapital',
+                'Operating Cash Flow': 'ncfo',
+                'Capital Expenditures': 'capex',
+                'Free Cash Flow': 'fcf',
+                'FCF per Share': 'fcfps',
+                'Gross Margin': 'grossMargin',
+                'Operating Margin': 'operatingMargin',
+                'Pretax Margin': 'pretaxMargin',
+                'Profit Margin': 'profitMargin',
+                'EBITDA Margin': 'ebitdaMargin',
+                'EBIT Margin': 'ebitMargin',
+                'FCF Margin': 'fcfMargin',
+                'Dividend per Share': 'dps',
+                'Dividend Yield': 'dividendYield',
+                'Dividend Growth': 'dividendGrowth',
+                'Years of Dividend Growth': 'dividendGrowthYears',
+                'Payout Ratio': 'payoutRatio',
+                'Buyback Yield': 'buybackYield',
+                'Total Shareholder Return': 'totalReturn',
+                'Earnings Yield': 'earningsYield',
+                'FCF Yield': 'fcfYield',
+                'Price Target': 'priceTarget',
+                'Analyst Ratings': 'analystRatings',
+                'Number of Analysts': 'analystCount',
+                'Revenue Growth Forecast (5Y)': 'revenue5y',
+                'EPS Growth Forecast (5Y)': 'eps5y',
+            }
+
+            # Store the value if we have a mapping for this label
+            metric_key = label_mapping.get(label)
+            if metric_key:
+                metrics[metric_key] = parsed_value
+
+        # Also get current stock price from yfinance
+        try:
+            ticker_obj = yf.Ticker(ticker)
+            stock_info = ticker_obj.info
+            metrics['currentPrice'] = stock_info.get('regularMarketPrice') or stock_info.get('currentPrice')
+        except Exception as e:
+            print(f"Warning: Could not get current price for {ticker}: {e}")
+            metrics['currentPrice'] = None
+
+        print(f"Extracted {len(metrics)} metrics for {ticker}")
+        return metrics
+
     def get_company_metrics(self):
-        """
-        Get financial metrics for a specific company ticker.
-        
-        Args:
-            ticker (str): The stock ticker symbol.
-        
-        Returns:
-            dict: A dictionary containing the company's financial metrics.
-        """
+        """Get financial metrics for all companies in STOCK_LIST"""
         all_companies_metrics = {}
         for industry, companies in STOCK_LIST.items():
             for company in companies:
-                all_companies_metrics[company] = self.extract_ticker_metrics(company, industry)
+                print(f"Fetching data for {company}...")
+                metrics = self.extract_ticker_metrics(company, industry)
+                if metrics:
+                    all_companies_metrics[company] = metrics
+                # Wait to avoid rate limiting
                 time.sleep(random.uniform(10, 30))
         return all_companies_metrics
 
 if __name__ == "__main__":
-    ratio_scraper = Ratio_Scraper()
-    # print(ratio_scraper.extract_ticker_metrics("NVDA"))  # Example ticker symbol, replace with actual ticker
-    all_companies_metrics = (ratio_scraper.get_company_metrics())  # Get metrics for all companies in STOCK_LIST
-    with open(f'../data/ratio/stock_list_metrics_{ratio_scraper.current_date}.json', 'w') as f:
-        json.dump(all_companies_metrics, f, indent=2)
+    scraper = Ratio_Scraper_Fixed()
+
+    # Test with a single stock first
+    print("Testing with GOOG...")
+    test_result = scraper.extract_ticker_metrics("GOOG", "Tech")
+    print(f"\\nTest result for GOOG:")
+    for key, value in list(test_result.items())[:10]:  # Show first 10 items
+        print(f"  {key}: {value}")
+
+    # Uncomment below to run for all stocks
+    all_metrics = scraper.get_company_metrics()
+    with open(f'../data/ratio/stock_list_metrics_{scraper.current_date}.json', 'w') as f:
+        json.dump(all_metrics, f, indent=2)

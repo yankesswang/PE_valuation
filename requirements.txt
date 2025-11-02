@@ -2,3 +2,10 @@ pandas
 selenium
 webdriver-manager
 tqdm
+yfinance
+beautifulsoup4
+requests
+numpy
+json5
+xlsxwriter
+lxml

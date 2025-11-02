@@ -1,11 +1,10 @@
 import pandas as pd
-import re, json
+import re, json, json5
 import yfinance as yf
 
 # custom imports
 from utils import fetch_url, parse_html, extract_percentage
 import ast
-from datetime import datetime
 
 class StockAnalysisScraper:
     def __init__(self, ticker, current_year = 2025):
@@ -15,15 +14,43 @@ class StockAnalysisScraper:
         }
         self.ticker = ticker
         self.current_year = current_year
-        date = datetime.now().strftime('%Y-%m-%d')
-        with open(f"../data/ratio/stock_list_ratio_{date}.json", "r") as f:
-            self.ratio_data = json.load(f)
 
-        with open(f"../data/forecast/stock_list_forecasts_{date}.json", "r") as f:
-            self.forecast_data = json.load(f)
+        # Automatically find the latest data files
+        import glob
+        import os
 
-        with open(f"../data/pe/stock_list_PE_{date}.json", "r") as f:
-            self.pe_data = json.load(f)
+        # Find latest ratio file
+        ratio_files = glob.glob("../data/ratio/stock_list_metrics_*.json")
+        latest_ratio = max(ratio_files, key=os.path.getmtime) if ratio_files else None
+
+        # Find latest forecast file
+        forecast_files = glob.glob("../data/forecast/stock_list_forecasts_*.json")
+        latest_forecast = max(forecast_files, key=os.path.getmtime) if forecast_files else None
+
+        if latest_ratio:
+            print(f"Using ratio data: {os.path.basename(latest_ratio)}")
+            with open(latest_ratio, "r") as f:
+                self.ratio_data = json.load(f)
+        else:
+            print("Warning: No ratio data file found")
+            self.ratio_data = {}
+
+        if latest_forecast:
+            print(f"Using forecast data: {os.path.basename(latest_forecast)}")
+            with open(latest_forecast, "r") as f:
+                self.forecast_data = json.load(f)
+        else:
+            print("Warning: No forecast data file found")
+            self.forecast_data = {}
+
+    def safe_round(self, value, decimals=2):
+        """Safely round a value, returning None if value is None"""
+        if value is None:
+            return None
+        try:
+            return round(float(value), decimals)
+        except (TypeError, ValueError):
+            return None
             
     def get_eps_forecast(self):
         """
@@ -33,22 +60,32 @@ class StockAnalysisScraper:
             company (str): The stock ticker symbol.
 
         Returns:
-            dict or None: Dictionary containing EPS for 2024 and 2025, or None if failed.
+            dict or None: Dictionary containing EPS for current and next year, or None if failed.
         """
         current_year_suffix = str(self.current_year)[-2:]
         next_year_suffix = str(self.current_year + 1)[-2:]
-        annual_data = (self.forecast_data[self.ticker]["annual"])
-        quarterly_growth_data = (self.forecast_data[self.ticker]["quarterly"].get("eps_growth", None))
-       
-        eps_current_year = round(annual_data.get("current_eps", None), 2)
-        eps_next_year = round(annual_data.get("next_year_eps", None), 2)
-        
-        valid_values = [x for x in quarterly_growth_data[:min(5, len(quarterly_growth_data))] if x is not None] if quarterly_growth_data else []
-        eps_growth = round(sum(valid_values) / len(valid_values), 2) if valid_values else None
+
+        # Get data safely
+        if self.ticker not in self.forecast_data:
+            print(f"Warning: {self.ticker} not found in forecast data")
+            return {
+                f"eps_{current_year_suffix}": None,
+                f"eps_{next_year_suffix}": None,
+                "past_eps_growth": None
+            }
+
+        annual_data = self.forecast_data[self.ticker].get("annual", {})
+
+        eps_current_year = self.safe_round(annual_data.get("current_eps", None), 2)
+        eps_next_year = self.safe_round(annual_data.get("next_year_eps", None), 2)
+
+        # Use annual growth rate instead of quarterly (quarterly data is not available)
+        eps_growth = self.safe_round(annual_data.get("current_growth", None), 2)
+
         return {
-            f"eps_{current_year_suffix}" : eps_current_year,
-            f"eps_{next_year_suffix}" : eps_next_year,
-            "past_eps_growth" : eps_growth
+            f"eps_{current_year_suffix}": eps_current_year,
+            f"eps_{next_year_suffix}": eps_next_year,
+            "past_eps_growth": eps_growth  # Now uses annual growth from forecast
         }
 
     def get_growth_forecasts(self):
@@ -131,26 +168,47 @@ class StockAnalysisScraper:
             ticker (str): The stock ticker symbol.
 
         Returns:
-            tuple: A tuple containing the market capitalization and current price, or None if failed.
+            dict: Dictionary containing market cap, price, and beta, or None if failed.
         """
-        # try:
-            # stock = yf.Ticker(self.ticker)
-       
+        try:
+            # Get market cap from ratio data
+            if self.ticker not in self.ratio_data:
+                print(f"Warning: {self.ticker} not found in ratio data")
+                return None
 
-        market_cap = round(self.ratio_data[self.ticker]["marketcap"]/1000000000.0, 2) 
-        # stock_price = self.get_price(self.ticker)
-        stock_price = yf.Ticker(self.ticker).info["regularMarketPrice"]
-        beta_value = self.ratio_data[self.ticker]["beta"]
-    
-        return {
-            'ticker': self.ticker,
-            '市值': str(market_cap)+"B",
-            '股價': stock_price,
-            'Beta': (beta_value)
-        }
-        # except Exception as e:
-        #     print(f"Error retrieving data for {self.ticker}: {e}")
-        #     return None
+            ticker_data = self.ratio_data[self.ticker]
+
+            # Get market cap (handle None values)
+            marketcap_raw = ticker_data.get("marketcap")
+            if marketcap_raw is not None:
+                market_cap = round(marketcap_raw / 1000000000.0, 2)
+            else:
+                print(f"Warning: No market cap data for {self.ticker}")
+                market_cap = 0
+
+            # Get stock price from yfinance
+            try:
+                stock_price = yf.Ticker(self.ticker).info.get("regularMarketPrice")
+                if stock_price is None:
+                    # Try currentPrice as backup
+                    stock_price = yf.Ticker(self.ticker).info.get("currentPrice", 0)
+            except Exception as e:
+                print(f"Warning: Could not get price from yfinance for {self.ticker}: {e}")
+                stock_price = 0
+
+            # Get beta value
+            beta_value = ticker_data.get("beta")
+
+            return {
+                'ticker': self.ticker,
+                '市值': str(market_cap) + "B",
+                '股價': stock_price,
+                'Beta': beta_value
+            }
+
+        except Exception as e:
+            print(f"Error retrieving data for {self.ticker}: {e}")
+            return None
 
 
 if __name__ == '__main__':

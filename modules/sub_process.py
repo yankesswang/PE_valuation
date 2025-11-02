@@ -4,7 +4,7 @@ import threading
 import os
 
 def run_script(script):
-    os.system(f'python {script}')
+    os.system(f'python3 {script}')
 # 三個 Python 檔案
 scripts = ['ratio_scraper.py', 'pe_scraper.py', 'forecast_scarper.py']
 

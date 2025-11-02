@@ -13,18 +13,32 @@ from tqdm import tqdm  # Optional: For progress bars
 
 def clean_json_data(data_string):
     """Clean and prepare string data for JSON parsing in getting quarterly forecast data."""
+    # Remove [PRO] and undefined
     data_string = data_string.replace("[PRO]", 'null')
     data_string = data_string.replace("undefined", "null").strip()
+    
+    # Fix decimal formatting
     data_string = re.sub(r'(?<!\d)(-\.)(\d+)', r'-0.\2', data_string)  # Convert -.X to -0.X
     data_string = re.sub(r'(?<!\d)(\.)(\d+)', r'0.\2', data_string)    # Convert .X to 0.X
+    
+    # Add quotes around property names (JavaScript object -> JSON)
+    data_string = re.sub(r'(\w+):', r'"\1":', data_string)
+    
+    # Wrap in curly braces if not already wrapped
+    if not data_string.strip().startswith('{'):
+        data_string = '{' + data_string + '}'
+    
     return data_string
 
 def clean_soup_value(soup):
     """Clean and convert the value to a numeric type if applicable in Stock analysis web."""  
-    clean_soup = soup.split('const data = ')[1].split(";")[0]
+    # print(soup)
+    print('========================')
+    clean_soup = soup.split('const element = ')[1].split(";")[0]
     data_string = clean_soup.replace("void 0", "null")
     data_string = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)(:)', r'\1"\2"\3', data_string)
     data_string = data_string.replace("'", '"')
+    # print(data_string)
     return data_string
 
 def fetch_url(url, headers, max_retries=3, timeout=10, sleep_between_retries=2):
