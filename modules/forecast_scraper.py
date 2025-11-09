@@ -1,9 +1,9 @@
 from utils import fetch_url, parse_html
-import re, json, time, random
+import json, time, random
 from datetime import datetime
 from names import STOCK_LIST
 
-class Forecast_Scraper_Fixed():
+class Forecast_Scraper_Working():
     def __init__(self):
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
@@ -13,7 +13,7 @@ class Forecast_Scraper_Fixed():
 
     def parse_value(self, value_str):
         """Parse a value string from the website into a numeric value"""
-        if not value_str or value_str == 'n/a' or value_str == '-' or value_str == 'N/A':
+        if not value_str or value_str == 'n/a' or value_str == '-' or value_str == 'N/A' or 'Pro' in value_str:
             return None
 
         # Remove currency symbols, commas, and extra whitespace
@@ -33,11 +33,14 @@ class Forecast_Scraper_Fixed():
             # Try direct conversion
             return float(value_str)
         except (ValueError, AttributeError):
-            return value_str  # Return as string if can't convert
+            return None
 
-    def extract_forecast_data(self, ticker):
+    def extract_forecast_data(self, ticker, current_year=2025):
         """
         Extract EPS and Revenue forecast data for a given ticker from the forecast page.
+        Args:
+            ticker: Stock ticker symbol
+            current_year: Current fiscal year (default 2025)
         """
         url = f"https://stockanalysis.com/stocks/{ticker}/forecast/"
         response = fetch_url(url, self.headers)
@@ -66,90 +69,123 @@ class Forecast_Scraper_Fixed():
             }
         }
 
-        # Find all tables on the page
+        # Find all tables
         tables = soup.find_all('table')
 
-        # Parse annual forecast table (usually the first table)
+        # Process each table to find forecast tables (tables 5-8)
         for table in tables:
-            rows = table.find_all('tr')
+            # Get table header to identify what this table contains
+            header_row = table.find('thead')
+            if not header_row:
+                continue
 
-            for row in rows:
-                cells = row.find_all(['th', 'td'])
-                if len(cells) < 2:
+            headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
+
+            # Skip if not a forecast table (should have years as headers)
+            if len(headers) < 2:
+                continue
+
+            # Identify table type by first header
+            table_type = headers[0] if headers else ""
+
+            # Get year columns (skip first column which is the label)
+            year_headers = headers[1:]
+
+            # Try to find year indices for current and next year
+            try:
+                current_year_idx = None
+                next_year_idx = None
+                current_year_str = str(current_year)
+                next_year_str = str(current_year + 1)
+
+                for idx, year_header in enumerate(year_headers):
+                    if current_year_str in year_header:
+                        current_year_idx = idx
+                    if next_year_str in year_header:
+                        next_year_idx = idx
+
+                # If current year not found, use first available year (year_headers[0])
+                if current_year_idx is None and len(year_headers) > 0:
+                    # Check if first year is numeric and close to current year
+                    try:
+                        first_year = int(''.join(filter(str.isdigit, year_headers[0])))
+                        if first_year >= current_year and first_year <= current_year + 2:
+                            current_year_idx = 0
+                            # Also adjust next year to be index 1 if available
+                            if len(year_headers) > 1:
+                                next_year_idx = 1
+                    except:
+                        pass
+
+                # Still no current year? Skip this table
+                if current_year_idx is None:
                     continue
 
-                label = cells[0].get_text(strip=True)
+            except (ValueError, IndexError):
+                continue
 
-                # Check for EPS row
-                if 'EPS' in label and 'Diluted' in label:
-                    # Get current year and next year values
-                    if len(cells) >= 3:
-                        current_year_val = cells[-2].get('title') or cells[-2].get_text(strip=True)
-                        next_year_val = cells[-1].get('title') or cells[-1].get_text(strip=True)
-                        forecast_data['annual']['current_eps'] = self.parse_value(current_year_val)
-                        forecast_data['annual']['next_year_eps'] = self.parse_value(next_year_val)
+            # Get table body rows
+            body = table.find('tbody')
+            if not body:
+                continue
 
-                # Check for Revenue row
-                elif 'Revenue' in label and 'Growth' not in label:
-                    if len(cells) >= 3:
-                        current_year_val = cells[-2].get('title') or cells[-2].get_text(strip=True)
-                        next_year_val = cells[-1].get('title') or cells[-1].get_text(strip=True)
-                        forecast_data['annual']['current_revenue'] = self.parse_value(current_year_val)
-                        forecast_data['annual']['next_year_revenue'] = self.parse_value(next_year_val)
+            rows = body.find_all('tr')
 
-                # Check for EPS Growth
-                elif 'EPS Growth' in label:
-                    if len(cells) >= 3:
-                        current_growth = cells[-2].get('title') or cells[-2].get_text(strip=True)
-                        next_growth = cells[-1].get('title') or cells[-1].get_text(strip=True)
-                        forecast_data['annual']['current_growth'] = self.parse_value(current_growth)
-                        forecast_data['annual']['next_year_growth'] = self.parse_value(next_growth)
+            # Find the "Avg" row (or first data row if Avg doesn't exist)
+            avg_row = None
+            for row in rows:
+                cells = row.find_all('td')
+                if cells and cells[0].get_text(strip=True) in ['Avg', 'Average']:
+                    avg_row = cells
+                    break
 
-                # Check for Revenue Growth
-                elif 'Revenue Growth' in label:
-                    if len(cells) >= 3:
-                        current_growth = cells[-2].get('title') or cells[-2].get_text(strip=True)
-                        next_growth = cells[-1].get('title') or cells[-1].get_text(strip=True)
-                        forecast_data['annual']['current_revenue_growth'] = self.parse_value(current_growth)
-                        forecast_data['annual']['next_year_revenue_growth'] = self.parse_value(next_growth)
+            # If no Avg row, try first data row
+            if not avg_row and rows:
+                avg_row = rows[0].find_all('td')
 
-        # Try to extract quarterly data from tables
-        # Look for tables with quarterly data (Q1, Q2, Q3, Q4 headers)
-        for table in tables:
-            header_row = table.find('thead')
-            if header_row:
-                headers = [th.get_text(strip=True) for th in header_row.find_all('th')]
-                # Check if this is a quarterly table
-                if any('Q' in h or 'Quarter' in h for h in headers):
-                    body_rows = table.find('tbody').find_all('tr') if table.find('tbody') else []
-                    for row in body_rows:
-                        cells = row.find_all('td')
-                        if not cells:
-                            continue
+            if not avg_row or len(avg_row) < 2:
+                continue
 
-                        label = cells[0].get_text(strip=True)
-                        values = [self.parse_value(cell.get('title') or cell.get_text(strip=True))
-                                for cell in cells[1:]]
+            # Extract values based on table type
+            # Get current year value (index + 1 because first cell is label)
+            current_val = None
+            next_val = None
 
-                        if 'EPS' in label and 'Growth' not in label:
-                            forecast_data['quarterly']['eps'] = values
-                        elif 'EPS Growth' in label:
-                            forecast_data['quarterly']['eps_growth'] = values
-                        elif 'Revenue' in label and 'Growth' not in label:
-                            forecast_data['quarterly']['revenue'] = values
-                        elif 'Revenue Growth' in label:
-                            forecast_data['quarterly']['revenue_growth'] = values
+            if current_year_idx is not None and current_year_idx + 1 < len(avg_row):
+                current_cell = avg_row[current_year_idx + 1]
+                current_val = self.parse_value(current_cell.get('title') or current_cell.get_text(strip=True))
+
+            if next_year_idx is not None and next_year_idx + 1 < len(avg_row):
+                next_cell = avg_row[next_year_idx + 1]
+                next_val = self.parse_value(next_cell.get('title') or next_cell.get_text(strip=True))
+
+            # Store based on table type
+            if 'EPS Growth' in table_type:
+                forecast_data['annual']['current_growth'] = current_val
+                forecast_data['annual']['next_year_growth'] = next_val
+
+            elif 'EPS' in table_type and 'Growth' not in table_type:
+                forecast_data['annual']['current_eps'] = current_val
+                forecast_data['annual']['next_year_eps'] = next_val
+
+            elif 'Revenue Growth' in table_type:
+                forecast_data['annual']['current_revenue_growth'] = current_val
+                forecast_data['annual']['next_year_revenue_growth'] = next_val
+
+            elif 'Revenue' in table_type and 'Growth' not in table_type:
+                forecast_data['annual']['current_revenue'] = current_val
+                forecast_data['annual']['next_year_revenue'] = next_val
 
         print(f"Extracted forecast data for {ticker}")
         return forecast_data
 
-    def get_company_metrics(self):
+    def get_company_metrics(self, current_year=2025):
         """Get forecast metrics for all companies in STOCK_LIST"""
         all_companies_forecasts = {}
         for industry, companies in STOCK_LIST.items():
             for company in companies:
                 print(f"Fetching forecast data for {company}...")
-                forecast = self.extract_forecast_data(company)
+                forecast = self.extract_forecast_data(company, current_year)
                 if forecast:
                     all_companies_forecasts[company] = forecast
                 # Wait to avoid rate limiting
@@ -157,13 +193,18 @@ class Forecast_Scraper_Fixed():
         return all_companies_forecasts
 
 if __name__ == "__main__":
-    scraper = Forecast_Scraper_Fixed()
+    scraper = Forecast_Scraper_Working()
 
     # Test with a single stock first
     print("Testing with NVDA...")
     test_result = scraper.extract_forecast_data("NVDA")
-    print(f"\\nTest result for NVDA:")
+    print(f"\nTest result for NVDA:")
     print(json.dumps(test_result, indent=2))
+
+    print("\n\nTesting with AAPL...")
+    test_result2 = scraper.extract_forecast_data("AAPL")
+    print(f"\nTest result for AAPL:")
+    print(json.dumps(test_result2, indent=2))
 
     # Uncomment below to run for all stocks
     all_forecasts = scraper.get_company_metrics()
